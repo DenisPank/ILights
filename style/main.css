@@ -8,6 +8,11 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
 .text-description {
   font-weight: 400;
   font-size: 14px;
@@ -22,8 +27,9 @@ body {
   font-size: 14px;
   line-height: 1.219em;
   text-transform: capitalize;
-  transition: all 0.2 ease;
+  transition: all 0.2s ease;
   outline: none;
+  letter-spacing: 0.0018em;
 }
 
 .link:hover {
@@ -41,6 +47,11 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+
+ul,
+li {
+  display: block;
 }
 
 .btn {
@@ -88,6 +99,81 @@ h4 {
 }
 
 /*************************** header  ****************************/
+
+/* nav  */
+.nav {
+  padding: 13px 0;
+  width: 100%;
+  background: rgba(12, 5, 55, 1);
+}
+
+.nav__add {
+  color: rgba(255, 201, 79, 1);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.nav__add-icon {
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 201, 79, 1);
+  border-radius: 50%;
+  padding: 4px;
+  margin-left: 18px;
+}
+
+.nav__add:hover {
+  color: rgba(255, 201, 79, 0.8);
+}
+
+.nav__add p {
+  width: fit-content;
+  height: fit-content;
+}
+
+.nav__email {
+  display: flex;
+  width: 150px;
+}
+
+.nav__mail-icon {
+  margin-right: 10px;
+}
+
+.nav__btn {
+  background: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  display: flex;
+  width: fit-content;
+  padding: 12px 29px;
+}
+
+.nav__btn-icon {
+  margin-right: 10px;
+}
+
+.nav__btn:hover {
+  border-color: rgba(255, 201, 79, 0);
+}
+
+.nav__list {
+  display: grid;
+  grid-template-columns: 95px 52px 66px 150px 70px;
+  width: fit-content;
+  grid-gap: 35px;
+}
+
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* nav  */
+
 /* header  */
 /*************************** header  ****************************/
 /* header  */
