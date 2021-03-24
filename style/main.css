@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(83, 83, 83, 1);
+  line-height: 1.571em;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.219em;
+  text-transform: capitalize;
+  transition: all 0.2 ease;
+  outline: none;
+}
+
+.link:hover {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.219em;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  background: #ffc94f;
+  display: inline-block;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.111em;
+  color: rgba(83, 83, 83, 1);
+}
+
+h1 span {
+  text-transform: uppercase;
+  color: rgba(255, 201, 79, 1);
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.333em;
+  color: rgba(83, 83, 83, 1);
+  border-left: 5px solid #f3a800;
+  padding-left: 17px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2.5em;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.143em;
+  color: white;
+}
+
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
+/*************************** header  ****************************/
+/* header  */
