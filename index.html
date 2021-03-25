@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,10 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/font-awesome-4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style/media.css" />
     <link rel="stylesheet" href="style/main.css" />
@@ -52,6 +56,46 @@
         </a>
       </div>
     </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <h1 class="header__title">
+            <span>I-LIGHTS</span> - Эффективные решения
+          </h1>
+          <p class="header__text text-description">
+            Компания I-lights это современная производственно-проектная
+            организация с многолентим опытом работы в сфере разработки
+          </p>
+          <a href="#" class="header__btn btn">Подробнее</a>
+        </div>
+        <!-- Slider main container -->
+        <div class="header__swiper-container swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="header__swiper-slide swiper-slide">
+              <img src="img/table.jpg" alt="slide" class="header__img" />
+            </div>
+            <div class="header__swiper-slide swiper-slide">
+              <img src="img/table.jpg" alt="slide" class="header__img" />
+            </div>
+            <div class="header__swiper-slide swiper-slide">
+              <img src="img/table.jpg" alt="slide" class="header__img" />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="header__swiper-button-prev swiper-button-prev">
+            <i class="header__icon fa fa-angle-left" aria-hidden="true"></i>
+          </div>
+          <div class="header__swiper-button-next swiper-button-next">
+            <i class="header__icon fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+          <!-- If we need scrollbar -->
+          <div class="header__swiper-scrollbar swiper-scrollbar"></div>
+        </div>
+      </div>
+    </header>
+
     <!-- js initialization -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
