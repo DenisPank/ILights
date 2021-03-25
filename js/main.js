@@ -10,9 +10,9 @@ new Swiper(".header__swiper-container", {
   centeredSlides: false,
 });
 
-$(".catalog__item-title").click(function (e) {
-  e.preventDefault();
-  $(".catalog__item .catalog__item-content").toggleClass(
-    "catalog__item-content-active"
-  );
+$(document).ready(function () {
+  $(".catalog__item-title").click(function (e) {
+    e.preventDefault();
+    $(this).next(".catalog__item-content").toggleClass("active");
+  });
 });
