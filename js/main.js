@@ -9,3 +9,10 @@ new Swiper(".header__swiper-container", {
   slidesPerView: 1,
   centeredSlides: false,
 });
+
+$(".catalog__item-title").click(function (e) {
+  e.preventDefault();
+  $(".catalog__item .catalog__item-content").toggleClass(
+    "catalog__item-content-active"
+  );
+});
