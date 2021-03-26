@@ -24,3 +24,11 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
 });
+
+new Swiper(".download__swiper-container", {
+  scrollbar: {
+    el: ".download__swiper-scrollbar ",
+  },
+  direction: "vertical",
+  slidesPerView: 3,
+});
