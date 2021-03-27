@@ -20,7 +20,8 @@ body {
   line-height: 1.571em;
 }
 
-.link {
+.link,
+.input-text {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -30,6 +31,14 @@ body {
   transition: all 0.2s ease;
   outline: none;
   letter-spacing: 0.0018em;
+}
+
+.input-text {
+  text-transform: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 23px;
+  color: rgba(83, 83, 83, 1);
 }
 
 .link:hover {
@@ -101,8 +110,16 @@ h3 {
 h4 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.143em;
   color: white;
+}
+
+input,
+textarea {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(239, 239, 239, 1);
+  outline: none;
+  padding-bottom: 10px;
 }
 
 /*************************** header  ****************************/
@@ -276,6 +293,9 @@ h4 {
 
 /* header  */
 /*************************** catalog  ****************************/
+.catalog {
+  padding: 90px 0 0 0;
+}
 
 .catalog__list {
   width: 330px;
@@ -655,10 +675,132 @@ h4 {
 }
 
 /* download  */
-/*************************** header  ****************************/
-/* header  */
-/*************************** header  ****************************/
-/* header  */
+/*************************** questions  ****************************/
+
+.questions {
+  background: url("../img/mark.png") no-repeat;
+  background-position: 26% 11%;
+  padding: 80px 0 100px 0;
+}
+
+.questions__title {
+  font-weight: 800;
+  font-size: 20px;
+  color: rgba(80, 80, 80, 1);
+  margin-right: 120px;
+  width: 305px;
+  margin-top: 10px;
+}
+
+.questions__form {
+  width: 360px;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+}
+
+.questions__btn {
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  color: rgba(80, 80, 80, 1);
+  margin: 17px 0 0 auto;
+  padding: 13px 69px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.questions__btn:hover {
+  opacity: 0.7;
+}
+
+.questions .container {
+  display: flex;
+  justify-content: center;
+}
+/* questions  */
+/*************************** footer  ****************************/
+
+.footer {
+  background: rgba(61, 79, 100, 1);
+  padding: 50px 0 55px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer__block-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__que-link {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: lowercase;
+  color: rgba(231, 233, 236, 1);
+}
+
+.footer__block-contact img {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+.footer__link {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
+
+.footer__block-questions {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__catalog-item a {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(231, 233, 236, 1);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer__catalog-item a:hover {
+  color: #ffc94f;
+  text-decoration-line: underline;
+}
+
+.footer__catalog-title {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer__contact-title {
+  font-weight: 500;
+}
+
+.footer__catalog-item {
+  margin-bottom: 10px;
+}
+
+.footer__text-logo {
+  font-weight: 500;
+  font-size: 11px;
+  color: rgba(231, 233, 236, 1);
+  margin-top: 24px;
+}
+/* footer  */
 /*************************** header  ****************************/
 /* header  */
 /*************************** header  ****************************/

@@ -8,6 +8,9 @@ new Swiper(".header__swiper-container", {
   },
   slidesPerView: 1,
   centeredSlides: false,
+  autoplay: {
+    delay: 1500,
+  },
 });
 
 $(document).ready(function () {
