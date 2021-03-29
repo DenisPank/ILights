@@ -86,8 +86,276 @@
   .nav__burger {
     display: block;
   }
+
+  .header__swiper-container {
+    display: none;
+  }
+
+  .header {
+    background: url("../img/table.jpg") no-repeat;
+    background-position: top right;
+    background-size: 55%;
+  }
 }
 @media screen and (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+
+  .header {
+    background-position: center top;
+    background-size: 576px;
+  }
+
+  h2 {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  h3 {
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  .header__content {
+    margin: 0 auto;
+    text-align: start;
+    width: 485px;
+  }
+
+  .text-description,
+  .btn,
+  .link {
+    font-size: 21px;
+  }
+
+  .header {
+    padding: 355px 0 0 0;
+    height: 100%;
+  }
+
+  .header__btn {
+    padding: 25px 100px;
+  }
+
+  .nav__burger-link,
+  .nav__burger-link .nav__item {
+    margin-top: 25px;
+  }
+
+  .nav__email {
+    width: auto;
+  }
+
+  .nav__btn {
+    padding: 24px 52px;
+  }
+
+  .nav__block {
+    justify-content: center;
+  }
+
+  .nav__burger-link.nav__list::after {
+    transform: translate(-50%, 75px);
+  }
+
+  .catalog__window {
+    display: none;
+  }
+
+  .catalog__list {
+    width: 100%;
+  }
+
+  .nav__logo {
+    z-index: 4;
+  }
+
+  .catalog__item-title h3 {
+    padding-left: 24px;
+  }
+
+  .services__block,
+  .services__block:nth-child(1),
+  .services__block:nth-child(2),
+  .services__block:nth-child(3),
+  .services__block:nth-child(4),
+  .services__block:nth-child(5) {
+    background-position: left 10px;
+    background-size: 65px;
+  }
+
+  .services__block::after,
+  .services__link::before {
+    display: none;
+  }
+
+  .services__wrapper {
+    margin-top: 30px;
+  }
+
+  .new-products__block {
+    width: 100%;
+  }
+
+  .new-products__list {
+    display: none;
+  }
+
+  .new-products__offer {
+    grid-gap: 13px;
+  }
+
+  .new-products__price {
+    font-size: 25px;
+  }
+
+  .download__swiper-container .swiper-slide {
+    height: fit-content;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+
+  .download__swiper-container .swiper-wrapper {
+    flex-direction: column;
+  }
+
+  .download__link-see,
+  .download__link p {
+    display: none;
+  }
+
+  .download {
+    background: none;
+  }
+
+  .download__text {
+    margin-right: auto;
+  }
+
+  .download .container {
+    display: block;
+  }
+
+  .download__block {
+    border-bottom: none;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .download__swiper-container {
+    width: 100%;
+  }
+
+  .download__title {
+    margin-bottom: 35px;
+  }
+
+  .download__text {
+    display: none;
+  }
+
+  .download__text-mob-link {
+    display: block;
+  }
+
+  .download {
+    padding: 40px 0 20px 0;
+  }
+
+  .questions {
+    background: none;
+    padding: 10px 0 30px 0;
+  }
+
+  .questions .container {
+    flex-direction: column;
+  }
+
+  .input-text {
+    margin-bottom: 15px;
+  }
+
+  .questions__btn {
+    width: 100%;
+  }
+
+  .questions__title {
+    margin: 0 0 30px 0;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 20px;
+  }
+
+  .footer__block-logo {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .footer__text-logo {
+    display: none;
+  }
+
+  .footer__text-logo-mobile {
+    text-align: center;
+    display: block;
+    grid-column: 1/3;
+    justify-self: center;
+    margin-top: 0;
+    font-size: 14px;
+    width: 100%;
+    border-top: 1px solid rgba(229, 229, 229, 1);
+    padding-top: 20px;
+  }
+
+  .footer {
+    padding: 10px 0 30px;
+  }
+
+  .footer__block-contact {
+    grid-column: 1/3;
+  }
+
+  .footer__block-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+  }
+
+  .footer__contact-title {
+    grid-column: 1/3;
+  }
+
+  .footer__cont-link:nth-child(4) {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+
+  h4 {
+    font-size: 19px;
+  }
+
+  .footer__link {
+    font-size: 19px;
+  }
+
+  .footer__block-contact img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer__catalog-item a {
+    font-size: 15px;
+  }
+
+  .footer__catalog-list {
+    width: 195px;
+  }
 }
 @media screen and (max-width: 576px) {
 }

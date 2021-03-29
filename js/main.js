@@ -31,10 +31,26 @@ $(document).ready(function () {
   });
 });
 
-new Swiper(".download__swiper-container", {
-  scrollbar: {
-    el: ".download__swiper-scrollbar ",
-  },
-  direction: "vertical",
-  slidesPerView: 3,
+var swiper;
+
+function resizeScrenn() {
+  if ($(window).width() >= 769) {
+    if ($("#download__swiper-container").length > 0) {
+      swiper = new Swiper(".download__swiper-container", {
+        scrollbar: {
+          el: ".download__swiper-scrollbar ",
+        },
+        direction: "vertical",
+        slidesPerView: 3,
+      });
+    }
+  } else {
+    swiper.destroy();
+  }
+}
+
+resizeScrenn();
+
+$(window).resize(function () {
+  resizeScrenn();
 });
