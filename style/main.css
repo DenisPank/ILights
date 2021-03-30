@@ -269,11 +269,11 @@ textarea {
 }
 
 .header__swiper-button-next {
-  top: 540px;
+  top: 520px;
 }
 
 .header__swiper-button-prev {
-  top: 500px;
+  top: 480px;
 }
 
 .swiper-container-horizontal > .header__swiper-scrollbar {
@@ -431,6 +431,15 @@ textarea {
 
 .services__link.active::before {
   transform: rotate(45deg);
+}
+
+.services__line-text {
+  transition: all 0.2s ease;
+}
+
+.services__line-text:hover {
+  color: rgba(255, 201, 79, 1);
+  text-decoration-line: underline;
 }
 
 .services__block::after {

@@ -31,6 +31,8 @@ $(document).ready(function () {
   });
 });
 
+const slider = document.querySelector(".download__swiper-container");
+
 var swiper;
 
 function resizeScrenn() {
@@ -38,14 +40,16 @@ function resizeScrenn() {
     if ($("#download__swiper-container").length > 0) {
       swiper = new Swiper(".download__swiper-container", {
         scrollbar: {
-          el: ".download__swiper-scrollbar ",
+          el: ".download__swiper-scrollbar",
         },
         direction: "vertical",
         slidesPerView: 3,
       });
     }
   } else {
-    swiper.destroy();
+    if (slider.classList.contains("swiper-container-initialized")) {
+      swiper.destroy();
+    }
   }
 }
 
