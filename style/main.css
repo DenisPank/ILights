@@ -488,6 +488,9 @@ textarea {
   border-radius: 0px 0px 0px 2px;
   position: relative;
   padding: 118px 25px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .new-products__block:hover {
@@ -534,7 +537,7 @@ textarea {
 
 .new-products__btn-offer a {
   padding: 19px 0px;
-  border-radius: 0;
+  border-radius: 0 0 0 4px;
   text-align: center;
 }
 
@@ -552,6 +555,14 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.new-products__img-offer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, -210px);
+  left: 50%;
 }
 
 .new-products__title {
