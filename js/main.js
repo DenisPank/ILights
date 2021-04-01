@@ -58,3 +58,6 @@ resizeScrenn();
 $(window).resize(function () {
   resizeScrenn();
 });
+
+let heigthTabContent = $(".tab-content").height();
+$(".tabs").css({ height: heigthTabContent + 50 });

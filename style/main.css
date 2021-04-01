@@ -940,4 +940,118 @@ body.active {
 .nav__burger-link .nav__add img {
   display: block;
 }
-/* nav__menu  */ ;
+/* nav__menu  */
+/****************************************** about  *******************************/
+.about {
+  padding: 20px 0 25px 0;
+}
+
+.palce__link,
+.p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #7c7c7c;
+  transition: all 0.08s ease;
+}
+
+.about__title {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0;
+  border: none;
+  margin: 65px 0 40px 0;
+}
+
+.tabs {
+  width: 650px;
+  height: 360px;
+  float: none;
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+.tabs li {
+  float: left;
+  display: block;
+}
+.tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.tabs label {
+  display: block;
+  padding: 14px 21px;
+  border-radius: 2px 2px 0 0;
+  font-size: 16px;
+  color: rgba(83, 83, 83, 1);
+  font-weight: 500;
+  text-transform: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 25px 0 25px 0;
+  border-top: 1px solid #ededed;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: transparent;
+  color: rgba(83, 83, 83, 1);
+}
+.tabs [id^="tab"]:checked + label {
+  top: 0;
+  padding-top: 17px;
+  background: rgba(61, 79, 100, 1);
+  color: white;
+  font-weight: 700;
+  border-radius: 2px 2px 0px 2px;
+}
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.tabs .tab-content p span {
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
+/****************************************** about  *******************************/
+/* about  */
