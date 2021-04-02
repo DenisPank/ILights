@@ -962,7 +962,7 @@ body.active {
   margin: 65px 0 40px 0;
 }
 
-.tabs {
+.about__tabs {
   width: 650px;
   height: 360px;
   float: none;
@@ -970,16 +970,16 @@ body.active {
   position: relative;
   text-align: left;
 }
-.tabs li {
+.about__tabs li {
   float: left;
   display: block;
 }
-.tabs input[type="radio"] {
+.about__tabs input[type="radio"] {
   position: absolute;
   top: 0;
   left: -9999px;
 }
-.tabs label {
+.about__tabs label {
   display: block;
   padding: 14px 21px;
   border-radius: 2px 2px 0 0;
@@ -998,7 +998,7 @@ body.active {
   transition: all 0.2s ease-in-out;
 }
 
-.tabs .tab-content {
+.about__tabs .tab-content {
   z-index: 2;
   display: none;
   overflow: hidden;
@@ -1006,7 +1006,7 @@ body.active {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
-  padding: 25px 0 25px 0;
+  padding: 25px 0 0 0;
   border-top: 1px solid #ededed;
   position: absolute;
   top: 50px;
@@ -1014,7 +1014,7 @@ body.active {
   background: transparent;
   color: rgba(83, 83, 83, 1);
 }
-.tabs [id^="tab"]:checked + label {
+.about__tabs [id^="tab"]:checked + label {
   top: 0;
   padding-top: 17px;
   background: rgba(61, 79, 100, 1);
@@ -1022,7 +1022,7 @@ body.active {
   font-weight: 700;
   border-radius: 2px 2px 0px 2px;
 }
-.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+.about__tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
 }
 
@@ -1033,12 +1033,139 @@ body.active {
   clear: both;
 }
 
-.tabs .tab-content p span {
+.about__tabs .tab-content p span {
   display: block;
   margin-bottom: 25px;
 }
 
-/* about  */
+/****************************************************** solutions ***********************888*/
+.solutions {
+  padding: 30px 0 50px 0;
+}
+
+.solutions__title {
+  font-weight: 800;
+  font-size: 24px;
+  padding: 0;
+  border: none;
+  margin-bottom: 30px;
+}
+.solutions__tabs {
+  width: 100%;
+  height: 360px;
+  float: none;
+  list-style: none;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.solutions__tabs li {
+  display: block;
+  width: 300px;
+}
+.solutions__tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.solutions__tabs label {
+  display: flex;
+  padding: 20px 21px;
+  border-radius: 2px 2px 0 0;
+  font-size: 14px;
+  color: rgba(83, 83, 83, 1);
+  font-weight: 700;
+  text-transform: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #efefef;
+}
+
+.solutions__tabs label img {
+  margin-left: auto;
+}
+
+.solutions__tabs .stab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: transparent;
+  color: rgba(83, 83, 83, 1);
+}
+.solutions__tabs [id^="stab"]:checked + label {
+  top: 0;
+  padding-top: 17px;
+  background: rgba(61, 79, 100, 1);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+}
+.solutions__tabs [id^="stab"]:checked ~ [id^="stab-content"] {
+  display: block;
+}
+
+.solutions__tabs .stab-content {
+  display: block;
+}
+
+.solutions__block-img {
+  position: absolute;
+  display: block;
+  content: "";
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.solutions__block-img:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.solutions__block-img-1 {
+  width: 100%;
+  height: 315px;
+  border-bottom: 11px solid white;
+  top: 0;
+}
+
+.solutions__block-img-2,
+.solutions__block-img-3,
+.solutions__block-img-4 {
+  height: 180px;
+  border-top: 11px solid white;
+  bottom: 0;
+  width: 320px;
+}
+
+.solutions__block-img-3 {
+  border-left: 22px solid white;
+  border-right: 22px solid white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.solutions__block-img-4 {
+  right: 0;
+}
+
+/* solutions  */
 /****************************************** about  *******************************/
 /* about  */
 /****************************************** about  *******************************/

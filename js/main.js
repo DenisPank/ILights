@@ -60,4 +60,7 @@ $(window).resize(function () {
 });
 
 let heigthTabContent = $(".tab-content").height();
-$(".tabs").css({ height: heigthTabContent + 50 });
+$(".about__tabs").css({ height: heigthTabContent + 50 });
+
+let heigthStabContent = $(".stab-content").height();
+$(".solutions__tabs").css({ height: heigthStabContent });
