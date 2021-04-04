@@ -963,7 +963,7 @@ body.active {
 }
 
 .about__tabs {
-  width: 650px;
+  width: 100%;
   height: 360px;
   float: none;
   list-style: none;
@@ -1024,13 +1024,6 @@ body.active {
 }
 .about__tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
-}
-
-.clearfix {
-  content: "";
-  display: table;
-  width: 100%;
-  clear: both;
 }
 
 .about__tabs .tab-content p span {
@@ -1166,8 +1159,111 @@ body.active {
 }
 
 /* solutions  */
-/****************************************** about  *******************************/
-/* about  */
+/****************************************** services  *******************************/
+.services {
+  padding: 20px 0 25px 0;
+}
+
+.palce__link,
+.p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #7c7c7c;
+  transition: all 0.08s ease;
+}
+
+.services__title {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0;
+  border: none;
+  margin: 65px 0 40px 0;
+}
+
+.services__tabs {
+  width: 100%;
+  height: 360px;
+  float: none;
+  list-style: none;
+  position: relative;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.services__tabs li {
+  float: left;
+  display: block;
+}
+.services__tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.services__tabs label {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 126px;
+  padding: 14px 8px;
+  border-radius: 2px 2px 0 0;
+  font-size: 16px;
+  color: rgba(83, 83, 83, 1);
+  font-weight: 500;
+  text-transform: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.services__tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 25px 0 0 0;
+  border-top: 1px solid #ededed;
+  position: absolute;
+  left: 0;
+  background: transparent;
+  color: rgba(83, 83, 83, 1);
+}
+.services__tabs [id^="tab"]:checked + label {
+  top: 0;
+  padding-top: 17px;
+  background: rgba(61, 79, 100, 1);
+  color: white;
+  font-weight: 700;
+  border-radius: 2px 2px 0px 2px;
+}
+.services__tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.services__tabs .tab-content p span {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.services__tabs .tab-content p .new-line {
+  margin-bottom: 0;
+}
+/* services  */
 /****************************************** about  *******************************/
 /* about  */
 /****************************************** about  *******************************/

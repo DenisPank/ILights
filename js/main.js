@@ -1,3 +1,5 @@
+// index
+
 new Swiper(".header__swiper-container", {
   navigation: {
     nextEl: ".header__swiper-button-next",
@@ -59,8 +61,19 @@ $(window).resize(function () {
   resizeScrenn();
 });
 
+// index
+// about
+
 let heigthTabContent = $(".tab-content").height();
 $(".about__tabs").css({ height: heigthTabContent + 50 });
 
 let heigthStabContent = $(".stab-content").height();
 $(".solutions__tabs").css({ height: heigthStabContent });
+
+// about
+// services
+
+let heigthTabContentServices = $(".tab-content").height();
+$(".services__tabs").css({ height: heigthTabContentServices + 126 });
+
+// services
