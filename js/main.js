@@ -20,6 +20,10 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).next(".catalog__item-content").toggleClass("active");
   });
+  $(".solutions__item-title").click(function (e) {
+    e.preventDefault();
+    $(this).next(".solutions__item-content").toggleClass("active");
+  });
   $(".services__link").click(function (e) {
     e.preventDefault();
     $(this).next().toggleClass("active");

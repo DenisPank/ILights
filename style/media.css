@@ -6,9 +6,17 @@
   .container {
     width: 1200px;
   }
+
+  .solutions__tabs .stab-content {
+    width: 72%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .solutions__tabs .stab-content {
+    width: 68%;
+  }
+
   .container {
     width: 992px;
   }
@@ -56,6 +64,14 @@
 }
 
 @media screen and (max-width: 992px) {
+  .solutions__tabs .stab-content {
+    width: 50%;
+  }
+
+  .about__tabs label {
+    font-size: 15px;
+  }
+
   .container {
     width: 768px;
   }
@@ -364,6 +380,22 @@
 
   .footer__logo {
     width: 110px;
+  }
+
+  .palce__link {
+    font-size: 12px;
+  }
+
+  .about__title {
+    font-size: 18px;
+  }
+
+  .about__tabs {
+    display: none;
+  }
+
+  .solutions__wrapper {
+    display: block;
   }
 }
 @media screen and (max-width: 576px) {

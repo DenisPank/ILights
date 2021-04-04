@@ -1144,7 +1144,7 @@ body.active {
   height: 180px;
   border-top: 11px solid white;
   bottom: 0;
-  width: 320px;
+  width: 35%;
 }
 
 .solutions__block-img-3 {
@@ -1156,6 +1156,55 @@ body.active {
 
 .solutions__block-img-4 {
   right: 0;
+}
+
+.solutions__wrapper {
+  margin-top: 77px;
+  display: none;
+}
+.solutions__list {
+  width: 330px;
+}
+.solutions__item {
+  border-top: 1px solid rgba(239, 239, 239, 1);
+  position: relative;
+}
+
+.solutions__item:first-child {
+  border: none;
+}
+
+.solutions__item:first-child a h3 {
+  padding-top: 0;
+}
+
+.solutions__item-title h3 {
+  transition: all 0.2s ease;
+  padding: 24px 0 17px 0;
+}
+
+.solutions__item-title h3:hover {
+  color: rgba(255, 201, 79, 1);
+}
+.solutions__item-content {
+  display: none;
+}
+.solutions__text {
+}
+.solutions__btn {
+  padding: 13px 69px;
+  background: rgba(61, 79, 100, 1);
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+  margin: 30px 0 45px;
+}
+
+.solutions__btn:hover {
+  background: rgba(255, 201, 79, 1);
+}
+
+.solutions__item-content.active {
+  display: block;
 }
 
 /* solutions  */
@@ -1246,13 +1295,6 @@ body.active {
 }
 .services__tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
-}
-
-.clearfix {
-  content: "";
-  display: table;
-  width: 100%;
-  clear: both;
 }
 
 .services__tabs .tab-content p span {
