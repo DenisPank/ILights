@@ -1116,7 +1116,7 @@ body.active {
 }
 
 .solutions__tabs .stab-content {
-  display: block;
+  display: none;
 }
 
 .solutions__block-img {

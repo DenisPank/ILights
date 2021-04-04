@@ -1,696 +1,667 @@
 <!DOCTYPE html>
-<html lang="en">
-  <html lang="ru">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>I LIGHTS</title>
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="style/font-awesome-4.7.0/css/font-awesome.min.css"
-      />
-      <link rel="stylesheet" href="style/main.css" />
-      <link rel="stylesheet" href="style/media.css" />
-    </head>
-    <body>
-      <nav class="nav">
-        <div class="container">
-          <img src="img/logo.png" alt="logo" class="nav__logo" />
-          <ul class="nav__list">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I LIGHTS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/media.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <img src="img/logo.png" alt="logo" class="nav__logo" />
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="about.html" class="list__link link">О компании </a>
+          </li>
+          <li class="nav__item">
+            <a href="catalog.html" class="list__link link"> Услуги </a>
+          </li>
+          <li class="nav__item">
+            <a href="services.html" class="list__link link">Проекты </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="list__link link">Доставка и оплата </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__add-link link"> Контакты </a>
+          </li>
+        </ul>
+        <a href="#" class="nav__add link">
+          <p>Подборка</p>
+          <img src="img/add.svg" alt="add" class="nav__add-icon" />
+        </a>
+        <a href="#" class="nav__email link">
+          <img src="img/email.svg" alt="#" class="nav__mail-icon" />
+          info@i-lights.ru
+        </a>
+        <a href="#" class="nav__btn btn link">
+          <img src="img/phone.svg" alt="#" class="nav__btn-icon" />
+          +7 (495) 233 55 57
+        </a>
+        <!-- gamburger -->
+        <div class="nav__burger"><span></span></div>
+        <div class="nav__block">
+          <ul class="nav__burger-link nav__list">
             <li class="nav__item">
               <a href="about.html" class="list__link link">О компании </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="list__link link"> Услуги </a>
+              <a href="catalog.html" class="list__link link"> Услуги </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="list__link link">Проекты </a>
+              <a href="services.html" class="list__link link">Проекты </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="list__link link">Доставка и оплата </a>
+              <a href="services.html" class="list__link link"
+                >Доставка и оплата
+              </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__add-link link"> Контакты </a>
             </li>
           </ul>
-          <a href="#" class="nav__add link">
+          <a href="#" class="nav__burger-link nav__add link">
             <p>Подборка</p>
             <img src="img/add.svg" alt="add" class="nav__add-icon" />
           </a>
-          <a href="#" class="nav__email link">
+          <a href="#" class="nav__burger-link nav__email link">
             <img src="img/email.svg" alt="#" class="nav__mail-icon" />
             info@i-lights.ru
           </a>
-          <a href="#" class="nav__btn btn link">
+          <a href="#" class="nav__burger-link nav__btn btn link">
             <img src="img/phone.svg" alt="#" class="nav__btn-icon" />
             +7 (495) 233 55 57
           </a>
-          <!-- gamburger -->
-          <div class="nav__burger"><span></span></div>
-          <div class="nav__block">
-            <ul class="nav__burger-link nav__list">
-              <li class="nav__item">
-                <a href="about.html" class="list__link link">О компании </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="list__link link"> Услуги </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="list__link link">Проекты </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="list__link link">Доставка и оплата </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__add-link link"> Контакты </a>
-              </li>
-            </ul>
-            <a href="#" class="nav__burger-link nav__add link">
-              <p>Подборка</p>
-              <img src="img/add.svg" alt="add" class="nav__add-icon" />
-            </a>
-            <a href="#" class="nav__burger-link nav__email link">
-              <img src="img/email.svg" alt="#" class="nav__mail-icon" />
-              info@i-lights.ru
-            </a>
-            <a href="#" class="nav__burger-link nav__btn btn link">
-              <img src="img/phone.svg" alt="#" class="nav__btn-icon" />
-              +7 (495) 233 55 57
-            </a>
-          </div>
-          <!-- gamburger -->
         </div>
-      </nav>
-      <section class="services">
-        <div class="container">
-          <p class="place">
-            <a href="index.html" class="palce__link link">Главная</a>
-            -
-            <a href="about.html" class="palce__link link">Доставка и оплата</a>
-          </p>
-          <h2 class="services__title">Услуги</h2>
-          <ul class="services__tabs" role="tablist">
-            <li>
-              <input type="radio" name="tabs" id="tab1" checked />
-              <label
-                for="tab1"
-                role="tab"
-                aria-selected="true"
-                aria-controls="panel1"
-                tabindex="0"
-                >Изготовление светильников для торгового и общестыкнного
-                освещения</label
-              >
-              <div
-                id="tab-content1"
-                class="tab-content"
-                role="tabpanel"
-                aria-labelledby="description"
-                aria-hidden="false"
-              >
-                <p>
-                  <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
-                  <span>
-                    Наша компания была образована с целью предложить Российскому
-                    рынку профессиональные светотехнические решения для
-                    освещения магазинов, офисов и объектов
-                    общественно-развлекательного назначения. Сегодня мы
-                    поставляем осветительное оборудование различных ценовых
-                    категорий из стран Юго-Восточной Азии и Европы, а так же
-                    являемся дистрибьюторами лучших Российских производителей. А
-                    среди наших клиентов, сетевые и частные магазины одежды и
-                    обуви, продуктовые магазины, торговые и офисные центры,
-                    представители индустрии красоты и здоровья, кафе, рестораны,
-                    отели, коттеджные поселки и частные заказчики. Мы
-                    предоставляем полный комплекс услуг в освещении от идеи до
-                    поставки: проектируем, подбираем оборудование, разрабатываем
-                    концепцию освещения и осуществляем поставку.
-                  </span>
-                  <span class="new-line">
-                    Основная наша специализация - это коммерческое освещение,
-                    т.е. поставки освещения для тех мест, где люди работают,
-                    занимаются спортом, совершают покупки, проводят досуг и
-                    отдыхают. А стилистические направления, которые мы
-                    охватываем начинаются со специальных светильников для
-                    функционального использования и доходят до дизайнерских
-                    светильников от всемирно известных производителей. </span
-                  ><span>
-                    Обратившись в нашу компанию Вы, в первую очередь получите
-                    доброжелательный подход и профессиональный сервис в подборе
-                    оборудования для ваших задач. Мы поможем в проектировании,
-                    сделаем светотехнический расчет и осуществим поставку
-                    оборудования. Среди прочих услуг, которые мы оказываем можно
-                    выделить светодизайн, разработку концепции освещения, а так
-                    же мониторинг и модернизация существующих систем освещения.
-                    В состав проекта освещения входят расчет освещенности в
-                    специальных программах, предоставление планов расстановки
-                    осветительного оборудования и составление спецификации
-                    осветительных приборов.
-                  </span>
-                  <span>
-                    Концепция освещения и светодизайн нужны для решения задач
-                    связанных с созданием художественной или особой атмосферы за
-                    счет света. Мониторинг и модернизация освещения могут быть
-                    полезны при переходе со стандартного освещения на
-                    светодиодное. Мы можем рассчитать энергоэффективность и
-                    продумать как модернизировать существующие светильники для
-                    повышения их яркости и эффективности.
-                  </span>
-                </p>
-              </div>
+        <!-- gamburger -->
+      </div>
+    </nav>
+    <section class="services">
+      <div class="container">
+        <p class="place">
+          <a href="index.html" class="palce__link link">Главная</a>
+          -
+          <a href="about.html" class="palce__link link">Доставка и оплата</a>
+        </p>
+        <h2 class="services__title">Услуги</h2>
+        <ul class="services__tabs" role="tablist">
+          <li>
+            <input type="radio" name="tabs" id="tab1" checked />
+            <label
+              for="tab1"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel1"
+              tabindex="0"
+              >Изготовление светильников для торгового и общестыкнного
+              освещения</label
+            >
+            <div
+              id="tab-content1"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="description"
+              aria-hidden="false"
+            >
+              <p>
+                <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
+                <span>
+                  Наша компания была образована с целью предложить Российскому
+                  рынку профессиональные светотехнические решения для освещения
+                  магазинов, офисов и объектов общественно-развлекательного
+                  назначения. Сегодня мы поставляем осветительное оборудование
+                  различных ценовых категорий из стран Юго-Восточной Азии и
+                  Европы, а так же являемся дистрибьюторами лучших Российских
+                  производителей. А среди наших клиентов, сетевые и частные
+                  магазины одежды и обуви, продуктовые магазины, торговые и
+                  офисные центры, представители индустрии красоты и здоровья,
+                  кафе, рестораны, отели, коттеджные поселки и частные
+                  заказчики. Мы предоставляем полный комплекс услуг в освещении
+                  от идеи до поставки: проектируем, подбираем оборудование,
+                  разрабатываем концепцию освещения и осуществляем поставку.
+                </span>
+                <span class="new-line">
+                  Основная наша специализация - это коммерческое освещение, т.е.
+                  поставки освещения для тех мест, где люди работают, занимаются
+                  спортом, совершают покупки, проводят досуг и отдыхают. А
+                  стилистические направления, которые мы охватываем начинаются
+                  со специальных светильников для функционального использования
+                  и доходят до дизайнерских светильников от всемирно известных
+                  производителей. </span
+                ><span>
+                  Обратившись в нашу компанию Вы, в первую очередь получите
+                  доброжелательный подход и профессиональный сервис в подборе
+                  оборудования для ваших задач. Мы поможем в проектировании,
+                  сделаем светотехнический расчет и осуществим поставку
+                  оборудования. Среди прочих услуг, которые мы оказываем можно
+                  выделить светодизайн, разработку концепции освещения, а так же
+                  мониторинг и модернизация существующих систем освещения. В
+                  состав проекта освещения входят расчет освещенности в
+                  специальных программах, предоставление планов расстановки
+                  осветительного оборудования и составление спецификации
+                  осветительных приборов.
+                </span>
+                <span>
+                  Концепция освещения и светодизайн нужны для решения задач
+                  связанных с созданием художественной или особой атмосферы за
+                  счет света. Мониторинг и модернизация освещения могут быть
+                  полезны при переходе со стандартного освещения на
+                  светодиодное. Мы можем рассчитать энергоэффективность и
+                  продумать как модернизировать существующие светильники для
+                  повышения их яркости и эффективности.
+                </span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab2" />
+            <label
+              for="tab2"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel2"
+              tabindex="0"
+              >Постовки дизайнерского свеата от ведущих европейских
+              производителей</label
+            >
+            <div
+              id="tab-content2"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <p>
+                <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
+                <span>
+                  Наша компания была образована с целью предложить Российскому
+                  рынку профессиональные светотехнические решения для освещения
+                  магазинов, офисов и объектов общественно-развлекательного
+                  назначения. Сегодня мы поставляем осветительное оборудование
+                  различных ценовых категорий из стран Юго-Восточной Азии и
+                  Европы, а так же являемся дистрибьюторами лучших Российских
+                  производителей. А среди наших клиентов, сетевые и частные
+                  магазины одежды и обуви, продуктовые магазины, торговые и
+                  офисные центры, представители индустрии красоты и здоровья,
+                  кафе, рестораны, отели, коттеджные поселки и частные
+                  заказчики. Мы предоставляем полный комплекс услуг в освещении
+                  от идеи до поставки: проектируем, подбираем оборудование,
+                  разрабатываем концепцию освещения и осуществляем поставку.
+                </span>
+                <span class="new-line">
+                  Основная наша специализация - это коммерческое освещение, т.е.
+                  поставки освещения для тех мест, где люди работают, занимаются
+                  спортом, совершают покупки, проводят досуг и отдыхают. А
+                  стилистические направления, которые мы охватываем начинаются
+                  со специальных светильников для функционального использования
+                  и доходят до дизайнерских светильников от всемирно известных
+                  производителей. </span
+                ><span>
+                  Обратившись в нашу компанию Вы, в первую очередь получите
+                  доброжелательный подход и профессиональный сервис в подборе
+                  оборудования для ваших задач. Мы поможем в проектировании,
+                  сделаем светотехнический расчет и осуществим поставку
+                  оборудования. Среди прочих услуг, которые мы оказываем можно
+                  выделить светодизайн, разработку концепции освещения, а так же
+                  мониторинг и модернизация существующих систем освещения. В
+                  состав проекта освещения входят расчет освещенности в
+                  специальных программах, предоставление планов расстановки
+                  осветительного оборудования и составление спецификации
+                  осветительных приборов.
+                </span>
+                <span>
+                  Концепция освещения и светодизайн нужны для решения задач
+                  связанных с созданием художественной или особой атмосферы за
+                  счет света. Мониторинг и модернизация освещения могут быть
+                  полезны при переходе со стандартного освещения на
+                  светодиодное. Мы можем рассчитать энергоэффективность и
+                  продумать как модернизировать существующие светильники для
+                  повышения их яркости и эффективности.
+                </span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab3" />
+            <label
+              for="tab3"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel3"
+              tabindex="0"
+              >Проектирование, светотехнические расчеты и разработка концепции
+              освещения</label
+            >
+            <div
+              id="tab-content3"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <p>
+                <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
+                <span>
+                  Наша компания была образована с целью предложить Российскому
+                  рынку профессиональные светотехнические решения для освещения
+                  магазинов, офисов и объектов общественно-развлекательного
+                  назначения. Сегодня мы поставляем осветительное оборудование
+                  различных ценовых категорий из стран Юго-Восточной Азии и
+                  Европы, а так же являемся дистрибьюторами лучших Российских
+                  производителей. А среди наших клиентов, сетевые и частные
+                  магазины одежды и обуви, продуктовые магазины, торговые и
+                  офисные центры, представители индустрии красоты и здоровья,
+                  кафе, рестораны, отели, коттеджные поселки и частные
+                  заказчики. Мы предоставляем полный комплекс услуг в освещении
+                  от идеи до поставки: проектируем, подбираем оборудование,
+                  разрабатываем концепцию освещения и осуществляем поставку.
+                </span>
+                <span class="new-line">
+                  Основная наша специализация - это коммерческое освещение, т.е.
+                  поставки освещения для тех мест, где люди работают, занимаются
+                  спортом, совершают покупки, проводят досуг и отдыхают. А
+                  стилистические направления, которые мы охватываем начинаются
+                  со специальных светильников для функционального использования
+                  и доходят до дизайнерских светильников от всемирно известных
+                  производителей. </span
+                ><span>
+                  Обратившись в нашу компанию Вы, в первую очередь получите
+                  доброжелательный подход и профессиональный сервис в подборе
+                  оборудования для ваших задач. Мы поможем в проектировании,
+                  сделаем светотехнический расчет и осуществим поставку
+                  оборудования. Среди прочих услуг, которые мы оказываем можно
+                  выделить светодизайн, разработку концепции освещения, а так же
+                  мониторинг и модернизация существующих систем освещения. В
+                  состав проекта освещения входят расчет освещенности в
+                  специальных программах, предоставление планов расстановки
+                  осветительного оборудования и составление спецификации
+                  осветительных приборов.
+                </span>
+                <span>
+                  Концепция освещения и светодизайн нужны для решения задач
+                  связанных с созданием художественной или особой атмосферы за
+                  счет света. Мониторинг и модернизация освещения могут быть
+                  полезны при переходе со стандартного освещения на
+                  светодиодное. Мы можем рассчитать энергоэффективность и
+                  продумать как модернизировать существующие светильники для
+                  повышения их яркости и эффективности.
+                </span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab4" />
+            <label
+              for="tab4"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel4"
+              tabindex="0"
+              >Модернизация светильников</label
+            >
+            <div
+              id="tab-content4"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <p>
+                <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
+                <span>
+                  Наша компания была образована с целью предложить Российскому
+                  рынку профессиональные светотехнические решения для освещения
+                  магазинов, офисов и объектов общественно-развлекательного
+                  назначения. Сегодня мы поставляем осветительное оборудование
+                  различных ценовых категорий из стран Юго-Восточной Азии и
+                  Европы, а так же являемся дистрибьюторами лучших Российских
+                  производителей. А среди наших клиентов, сетевые и частные
+                  магазины одежды и обуви, продуктовые магазины, торговые и
+                  офисные центры, представители индустрии красоты и здоровья,
+                  кафе, рестораны, отели, коттеджные поселки и частные
+                  заказчики. Мы предоставляем полный комплекс услуг в освещении
+                  от идеи до поставки: проектируем, подбираем оборудование,
+                  разрабатываем концепцию освещения и осуществляем поставку.
+                </span>
+                <span class="new-line">
+                  Основная наша специализация - это коммерческое освещение, т.е.
+                  поставки освещения для тех мест, где люди работают, занимаются
+                  спортом, совершают покупки, проводят досуг и отдыхают. А
+                  стилистические направления, которые мы охватываем начинаются
+                  со специальных светильников для функционального использования
+                  и доходят до дизайнерских светильников от всемирно известных
+                  производителей. </span
+                ><span>
+                  Обратившись в нашу компанию Вы, в первую очередь получите
+                  доброжелательный подход и профессиональный сервис в подборе
+                  оборудования для ваших задач. Мы поможем в проектировании,
+                  сделаем светотехнический расчет и осуществим поставку
+                  оборудования. Среди прочих услуг, которые мы оказываем можно
+                  выделить светодизайн, разработку концепции освещения, а так же
+                  мониторинг и модернизация существующих систем освещения. В
+                  состав проекта освещения входят расчет освещенности в
+                  специальных программах, предоставление планов расстановки
+                  осветительного оборудования и составление спецификации
+                  осветительных приборов.
+                </span>
+                <span>
+                  Концепция освещения и светодизайн нужны для решения задач
+                  связанных с созданием художественной или особой атмосферы за
+                  счет света. Мониторинг и модернизация освещения могут быть
+                  полезны при переходе со стандартного освещения на
+                  светодиодное. Мы можем рассчитать энергоэффективность и
+                  продумать как модернизировать существующие светильники для
+                  повышения их яркости и эффективности.
+                </span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab5" />
+            <label
+              for="tab5"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel5"
+              tabindex="0"
+              >Ремонт светодиоидных светильников</label
+            >
+            <div
+              id="tab-content5"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <p>
+                <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
+                <span>
+                  Наша компания была образована с целью предложить Российскому
+                  рынку профессиональные светотехнические решения для освещения
+                  магазинов, офисов и объектов общественно-развлекательного
+                  назначения. Сегодня мы поставляем осветительное оборудование
+                  различных ценовых категорий из стран Юго-Восточной Азии и
+                  Европы, а так же являемся дистрибьюторами лучших Российских
+                  производителей. А среди наших клиентов, сетевые и частные
+                  магазины одежды и обуви, продуктовые магазины, торговые и
+                  офисные центры, представители индустрии красоты и здоровья,
+                  кафе, рестораны, отели, коттеджные поселки и частные
+                  заказчики. Мы предоставляем полный комплекс услуг в освещении
+                  от идеи до поставки: проектируем, подбираем оборудование,
+                  разрабатываем концепцию освещения и осуществляем поставку.
+                </span>
+                <span class="new-line">
+                  Основная наша специализация - это коммерческое освещение, т.е.
+                  поставки освещения для тех мест, где люди работают, занимаются
+                  спортом, совершают покупки, проводят досуг и отдыхают. А
+                  стилистические направления, которые мы охватываем начинаются
+                  со специальных светильников для функционального использования
+                  и доходят до дизайнерских светильников от всемирно известных
+                  производителей. </span
+                ><span>
+                  Обратившись в нашу компанию Вы, в первую очередь получите
+                  доброжелательный подход и профессиональный сервис в подборе
+                  оборудования для ваших задач. Мы поможем в проектировании,
+                  сделаем светотехнический расчет и осуществим поставку
+                  оборудования. Среди прочих услуг, которые мы оказываем можно
+                  выделить светодизайн, разработку концепции освещения, а так же
+                  мониторинг и модернизация существующих систем освещения. В
+                  состав проекта освещения входят расчет освещенности в
+                  специальных программах, предоставление планов расстановки
+                  осветительного оборудования и составление спецификации
+                  осветительных приборов.
+                </span>
+                <span>
+                  Концепция освещения и светодизайн нужны для решения задач
+                  связанных с созданием художественной или особой атмосферы за
+                  счет света. Мониторинг и модернизация освещения могут быть
+                  полезны при переходе со стандартного освещения на
+                  светодиодное. Мы можем рассчитать энергоэффективность и
+                  продумать как модернизировать существующие светильники для
+                  повышения их яркости и эффективности.
+                </span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="solutions">
+      <div class="container">
+        <ul class="solutions__tabs clearfix" role="tablist">
+          <h2 class="solutions__title">Наши решения</h2>
+          <li>
+            <input type="radio" name="stabs" id="stab1" checked />
+            <label
+              for="stab1"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel1"
+              tabindex="0"
+              >Для магазинов
+              <img src="img/about-Arrow.svg" alt="arrow" />
+            </label>
+            <div
+              id="stab-content1"
+              class="stab-content"
+              role="tabpanel"
+              aria-labelledby="description"
+              aria-hidden="false"
+            >
+              <img src="img/img-sol1.jpg" alt="img" class="solutions__img" />
+              <div class="solutions__block-img solutions__block-img-1"></div>
+              <div class="solutions__block-img solutions__block-img-2"></div>
+              <div class="solutions__block-img solutions__block-img-3"></div>
+              <div class="solutions__block-img solutions__block-img-4"></div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="stabs" id="stab2" />
+            <label
+              for="stab2"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel2"
+              tabindex="0"
+              >Для общественных мест
+              <img src="img/about-Arrow.svg" alt="arrow" />
+            </label>
+            <div
+              id="stab-content2"
+              class="stab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <img src="img/img-sol2.jpg" alt="img" class="solutions__img" />
+              <div class="solutions__block-img solutions__block-img-1"></div>
+              <div class="solutions__block-img solutions__block-img-2"></div>
+              <div class="solutions__block-img solutions__block-img-3"></div>
+              <div class="solutions__block-img solutions__block-img-4"></div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="stabs" id="stab3" />
+            <label
+              for="stab3"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel3"
+              tabindex="0"
+              >Для фасадов и ландшафтов
+              <img src="img/about-Arrow.svg" alt="arrow" />
+            </label>
+            <div
+              id="stab-content3"
+              class="stab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <img src="img/img-sol3.jpg" alt="img" class="solutions__img" />
+              <div class="solutions__block-img solutions__block-img-1"></div>
+              <div class="solutions__block-img solutions__block-img-2"></div>
+              <div class="solutions__block-img solutions__block-img-3"></div>
+              <div class="solutions__block-img solutions__block-img-4"></div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="stabs" id="stab4" />
+            <label
+              for="stab4"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel4"
+              tabindex="0"
+              >Для кафе и ресторанов
+              <img src="img/about-Arrow.svg" alt="arrow" />
+            </label>
+            <div
+              id="stab-content4"
+              class="stab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <img src="img/img-sol4.jpg" alt="img" class="solutions__img" />
+              <div class="solutions__block-img solutions__block-img-1"></div>
+              <div class="solutions__block-img solutions__block-img-2"></div>
+              <div class="solutions__block-img solutions__block-img-3"></div>
+              <div class="solutions__block-img solutions__block-img-4"></div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="stabs" id="stab5" />
+            <label
+              for="stab5"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel5"
+              tabindex="0"
+              >Для офисов
+              <img src="img/about-Arrow.svg" alt="arrow" />
+            </label>
+            <div
+              id="stab-content5"
+              class="stab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <img src="img/img-sol5.jpg" alt="img" class="solutions__img" />
+              <div class="solutions__block-img solutions__block-img-1"></div>
+              <div class="solutions__block-img solutions__block-img-2"></div>
+              <div class="solutions__block-img solutions__block-img-3"></div>
+              <div class="solutions__block-img solutions__block-img-4"></div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="stabs" id="stab6" />
+            <label
+              for="stab6"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel6"
+              tabindex="0"
+              >Для жилых интерьеров
+              <img src="img/about-Arrow.svg" alt="arrow" />
+            </label>
+            <div
+              id="stab-content6"
+              class="stab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <img src="img/img-sol6.jpg" alt="img" class="solutions__img" />
+              <div class="solutions__block-img solutions__block-img-1"></div>
+              <div class="solutions__block-img solutions__block-img-2"></div>
+              <div class="solutions__block-img solutions__block-img-3"></div>
+              <div class="solutions__block-img solutions__block-img-4"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block footer__block-logo">
+          <img src="img/logo-footer.png" alt="" class="footer__logo" />
+          <p class="footer__text-logo">© Technolight 2015-2021</p>
+        </div>
+        <div class="footer__block footer__block-catalog">
+          <h4 class="footer__catalog-title">Каталог товаров</h4>
+          <ul class="footer__catalog-list">
+            <li class="footer__catalog-item">
+              <a href="#"> Трековые светильники </a>
             </li>
-            <li>
-              <input type="radio" name="tabs" id="tab2" />
-              <label
-                for="tab2"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel2"
-                tabindex="0"
-                >Постовки дизайнерского свеата от ведущих европейских
-                производителей</label
-              >
-              <div
-                id="tab-content2"
-                class="tab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <p>
-                  <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
-                  <span>
-                    Наша компания была образована с целью предложить Российскому
-                    рынку профессиональные светотехнические решения для
-                    освещения магазинов, офисов и объектов
-                    общественно-развлекательного назначения. Сегодня мы
-                    поставляем осветительное оборудование различных ценовых
-                    категорий из стран Юго-Восточной Азии и Европы, а так же
-                    являемся дистрибьюторами лучших Российских производителей. А
-                    среди наших клиентов, сетевые и частные магазины одежды и
-                    обуви, продуктовые магазины, торговые и офисные центры,
-                    представители индустрии красоты и здоровья, кафе, рестораны,
-                    отели, коттеджные поселки и частные заказчики. Мы
-                    предоставляем полный комплекс услуг в освещении от идеи до
-                    поставки: проектируем, подбираем оборудование, разрабатываем
-                    концепцию освещения и осуществляем поставку.
-                  </span>
-                  <span class="new-line">
-                    Основная наша специализация - это коммерческое освещение,
-                    т.е. поставки освещения для тех мест, где люди работают,
-                    занимаются спортом, совершают покупки, проводят досуг и
-                    отдыхают. А стилистические направления, которые мы
-                    охватываем начинаются со специальных светильников для
-                    функционального использования и доходят до дизайнерских
-                    светильников от всемирно известных производителей. </span
-                  ><span>
-                    Обратившись в нашу компанию Вы, в первую очередь получите
-                    доброжелательный подход и профессиональный сервис в подборе
-                    оборудования для ваших задач. Мы поможем в проектировании,
-                    сделаем светотехнический расчет и осуществим поставку
-                    оборудования. Среди прочих услуг, которые мы оказываем можно
-                    выделить светодизайн, разработку концепции освещения, а так
-                    же мониторинг и модернизация существующих систем освещения.
-                    В состав проекта освещения входят расчет освещенности в
-                    специальных программах, предоставление планов расстановки
-                    осветительного оборудования и составление спецификации
-                    осветительных приборов.
-                  </span>
-                  <span>
-                    Концепция освещения и светодизайн нужны для решения задач
-                    связанных с созданием художественной или особой атмосферы за
-                    счет света. Мониторинг и модернизация освещения могут быть
-                    полезны при переходе со стандартного освещения на
-                    светодиодное. Мы можем рассчитать энергоэффективность и
-                    продумать как модернизировать существующие светильники для
-                    повышения их яркости и эффективности.
-                  </span>
-                </p>
-              </div>
+            <li class="footer__catalog-item">
+              <a href="#"> Встраиваемые светильники </a>
             </li>
-            <li>
-              <input type="radio" name="tabs" id="tab3" />
-              <label
-                for="tab3"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel3"
-                tabindex="0"
-                >Проектирование, светотехнические расчеты и разработка концепции
-                освещения</label
-              >
-              <div
-                id="tab-content3"
-                class="tab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <p>
-                  <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
-                  <span>
-                    Наша компания была образована с целью предложить Российскому
-                    рынку профессиональные светотехнические решения для
-                    освещения магазинов, офисов и объектов
-                    общественно-развлекательного назначения. Сегодня мы
-                    поставляем осветительное оборудование различных ценовых
-                    категорий из стран Юго-Восточной Азии и Европы, а так же
-                    являемся дистрибьюторами лучших Российских производителей. А
-                    среди наших клиентов, сетевые и частные магазины одежды и
-                    обуви, продуктовые магазины, торговые и офисные центры,
-                    представители индустрии красоты и здоровья, кафе, рестораны,
-                    отели, коттеджные поселки и частные заказчики. Мы
-                    предоставляем полный комплекс услуг в освещении от идеи до
-                    поставки: проектируем, подбираем оборудование, разрабатываем
-                    концепцию освещения и осуществляем поставку.
-                  </span>
-                  <span class="new-line">
-                    Основная наша специализация - это коммерческое освещение,
-                    т.е. поставки освещения для тех мест, где люди работают,
-                    занимаются спортом, совершают покупки, проводят досуг и
-                    отдыхают. А стилистические направления, которые мы
-                    охватываем начинаются со специальных светильников для
-                    функционального использования и доходят до дизайнерских
-                    светильников от всемирно известных производителей. </span
-                  ><span>
-                    Обратившись в нашу компанию Вы, в первую очередь получите
-                    доброжелательный подход и профессиональный сервис в подборе
-                    оборудования для ваших задач. Мы поможем в проектировании,
-                    сделаем светотехнический расчет и осуществим поставку
-                    оборудования. Среди прочих услуг, которые мы оказываем можно
-                    выделить светодизайн, разработку концепции освещения, а так
-                    же мониторинг и модернизация существующих систем освещения.
-                    В состав проекта освещения входят расчет освещенности в
-                    специальных программах, предоставление планов расстановки
-                    осветительного оборудования и составление спецификации
-                    осветительных приборов.
-                  </span>
-                  <span>
-                    Концепция освещения и светодизайн нужны для решения задач
-                    связанных с созданием художественной или особой атмосферы за
-                    счет света. Мониторинг и модернизация освещения могут быть
-                    полезны при переходе со стандартного освещения на
-                    светодиодное. Мы можем рассчитать энергоэффективность и
-                    продумать как модернизировать существующие светильники для
-                    повышения их яркости и эффективности.
-                  </span>
-                </p>
-              </div>
+            <li class="footer__catalog-item">
+              <a href="#"> Профильные светильники </a>
             </li>
-            <li>
-              <input type="radio" name="tabs" id="tab4" />
-              <label
-                for="tab4"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel4"
-                tabindex="0"
-                >Модернизация светильников</label
-              >
-              <div
-                id="tab-content4"
-                class="tab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <p>
-                  <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
-                  <span>
-                    Наша компания была образована с целью предложить Российскому
-                    рынку профессиональные светотехнические решения для
-                    освещения магазинов, офисов и объектов
-                    общественно-развлекательного назначения. Сегодня мы
-                    поставляем осветительное оборудование различных ценовых
-                    категорий из стран Юго-Восточной Азии и Европы, а так же
-                    являемся дистрибьюторами лучших Российских производителей. А
-                    среди наших клиентов, сетевые и частные магазины одежды и
-                    обуви, продуктовые магазины, торговые и офисные центры,
-                    представители индустрии красоты и здоровья, кафе, рестораны,
-                    отели, коттеджные поселки и частные заказчики. Мы
-                    предоставляем полный комплекс услуг в освещении от идеи до
-                    поставки: проектируем, подбираем оборудование, разрабатываем
-                    концепцию освещения и осуществляем поставку.
-                  </span>
-                  <span class="new-line">
-                    Основная наша специализация - это коммерческое освещение,
-                    т.е. поставки освещения для тех мест, где люди работают,
-                    занимаются спортом, совершают покупки, проводят досуг и
-                    отдыхают. А стилистические направления, которые мы
-                    охватываем начинаются со специальных светильников для
-                    функционального использования и доходят до дизайнерских
-                    светильников от всемирно известных производителей. </span
-                  ><span>
-                    Обратившись в нашу компанию Вы, в первую очередь получите
-                    доброжелательный подход и профессиональный сервис в подборе
-                    оборудования для ваших задач. Мы поможем в проектировании,
-                    сделаем светотехнический расчет и осуществим поставку
-                    оборудования. Среди прочих услуг, которые мы оказываем можно
-                    выделить светодизайн, разработку концепции освещения, а так
-                    же мониторинг и модернизация существующих систем освещения.
-                    В состав проекта освещения входят расчет освещенности в
-                    специальных программах, предоставление планов расстановки
-                    осветительного оборудования и составление спецификации
-                    осветительных приборов.
-                  </span>
-                  <span>
-                    Концепция освещения и светодизайн нужны для решения задач
-                    связанных с созданием художественной или особой атмосферы за
-                    счет света. Мониторинг и модернизация освещения могут быть
-                    полезны при переходе со стандартного освещения на
-                    светодиодное. Мы можем рассчитать энергоэффективность и
-                    продумать как модернизировать существующие светильники для
-                    повышения их яркости и эффективности.
-                  </span>
-                </p>
-              </div>
+            <li class="footer__catalog-item">
+              <a href="#"> Фигурные светильники </a>
             </li>
-            <li>
-              <input type="radio" name="tabs" id="tab5" />
-              <label
-                for="tab5"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel5"
-                tabindex="0"
-                >Ремонт светодиоидных светильников</label
-              >
-              <div
-                id="tab-content5"
-                class="tab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <p>
-                  <span>Мы ценим Ваше время, поэтому, коротко о главном. </span>
-                  <span>
-                    Наша компания была образована с целью предложить Российскому
-                    рынку профессиональные светотехнические решения для
-                    освещения магазинов, офисов и объектов
-                    общественно-развлекательного назначения. Сегодня мы
-                    поставляем осветительное оборудование различных ценовых
-                    категорий из стран Юго-Восточной Азии и Европы, а так же
-                    являемся дистрибьюторами лучших Российских производителей. А
-                    среди наших клиентов, сетевые и частные магазины одежды и
-                    обуви, продуктовые магазины, торговые и офисные центры,
-                    представители индустрии красоты и здоровья, кафе, рестораны,
-                    отели, коттеджные поселки и частные заказчики. Мы
-                    предоставляем полный комплекс услуг в освещении от идеи до
-                    поставки: проектируем, подбираем оборудование, разрабатываем
-                    концепцию освещения и осуществляем поставку.
-                  </span>
-                  <span class="new-line">
-                    Основная наша специализация - это коммерческое освещение,
-                    т.е. поставки освещения для тех мест, где люди работают,
-                    занимаются спортом, совершают покупки, проводят досуг и
-                    отдыхают. А стилистические направления, которые мы
-                    охватываем начинаются со специальных светильников для
-                    функционального использования и доходят до дизайнерских
-                    светильников от всемирно известных производителей. </span
-                  ><span>
-                    Обратившись в нашу компанию Вы, в первую очередь получите
-                    доброжелательный подход и профессиональный сервис в подборе
-                    оборудования для ваших задач. Мы поможем в проектировании,
-                    сделаем светотехнический расчет и осуществим поставку
-                    оборудования. Среди прочих услуг, которые мы оказываем можно
-                    выделить светодизайн, разработку концепции освещения, а так
-                    же мониторинг и модернизация существующих систем освещения.
-                    В состав проекта освещения входят расчет освещенности в
-                    специальных программах, предоставление планов расстановки
-                    осветительного оборудования и составление спецификации
-                    осветительных приборов.
-                  </span>
-                  <span>
-                    Концепция освещения и светодизайн нужны для решения задач
-                    связанных с созданием художественной или особой атмосферы за
-                    счет света. Мониторинг и модернизация освещения могут быть
-                    полезны при переходе со стандартного освещения на
-                    светодиодное. Мы можем рассчитать энергоэффективность и
-                    продумать как модернизировать существующие светильники для
-                    повышения их яркости и эффективности.
-                  </span>
-                </p>
-              </div>
+            <li class="footer__catalog-item">
+              <a href="#"> Светильники Армстронг </a>
+            </li>
+            <li class="footer__catalog-item">
+              <a href="#"> Армстронг с равномерной засветкой </a>
+            </li>
+            <li class="footer__catalog-item">
+              <a href="#"> Произовдители </a>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="solutions">
-        <div class="container">
-          <ul class="solutions__tabs clearfix" role="tablist">
-            <h2 class="solutions__title">Наши решения</h2>
-            <li>
-              <input type="radio" name="stabs" id="stab1" checked />
-              <label
-                for="stab1"
-                role="tab"
-                aria-selected="true"
-                aria-controls="panel1"
-                tabindex="0"
-                >Для магазинов
-                <img src="img/about-Arrow.svg" alt="arrow" />
-              </label>
-              <div
-                id="stab-content1"
-                class="stab-content"
-                role="tabpanel"
-                aria-labelledby="description"
-                aria-hidden="false"
-              >
-                <img
-                  src="img/about-img-sol.jpg"
-                  alt="img"
-                  class="solutions__img"
-                />
-                <div class="solutions__block-img solutions__block-img-1"></div>
-                <div class="solutions__block-img solutions__block-img-2"></div>
-                <div class="solutions__block-img solutions__block-img-3"></div>
-                <div class="solutions__block-img solutions__block-img-4"></div>
-              </div>
-            </li>
-            <li>
-              <input type="radio" name="stabs" id="stab2" />
-              <label
-                for="stab2"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel2"
-                tabindex="0"
-                >Для общественных мест
-                <img src="img/about-Arrow.svg" alt="arrow" />
-              </label>
-              <div
-                id="stab-content2"
-                class="stab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <img
-                  src="img/about-img-sol.jpg"
-                  alt="img"
-                  class="solutions__img"
-                />
-                <div class="solutions__block-img solutions__block-img-1"></div>
-                <div class="solutions__block-img solutions__block-img-2"></div>
-                <div class="solutions__block-img solutions__block-img-3"></div>
-                <div class="solutions__block-img solutions__block-img-4"></div>
-              </div>
-            </li>
-            <li>
-              <input type="radio" name="stabs" id="stab3" />
-              <label
-                for="stab3"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel3"
-                tabindex="0"
-                >Для фасадов и ландшафтов
-                <img src="img/about-Arrow.svg" alt="arrow" />
-              </label>
-              <div
-                id="stab-content3"
-                class="stab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <img
-                  src="img/about-img-sol.jpg"
-                  alt="img"
-                  class="solutions__img"
-                />
-                <div class="solutions__block-img solutions__block-img-1"></div>
-                <div class="solutions__block-img solutions__block-img-2"></div>
-                <div class="solutions__block-img solutions__block-img-3"></div>
-                <div class="solutions__block-img solutions__block-img-4"></div>
-              </div>
-            </li>
-            <li>
-              <input type="radio" name="stabs" id="stab4" />
-              <label
-                for="stab4"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel4"
-                tabindex="0"
-                >Для кафе и ресторанов
-                <img src="img/about-Arrow.svg" alt="arrow" />
-              </label>
-              <div
-                id="stab-content4"
-                class="stab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <img
-                  src="img/about-img-sol.jpg"
-                  alt="img"
-                  class="solutions__img"
-                />
-                <div class="solutions__block-img solutions__block-img-1"></div>
-                <div class="solutions__block-img solutions__block-img-2"></div>
-                <div class="solutions__block-img solutions__block-img-3"></div>
-                <div class="solutions__block-img solutions__block-img-4"></div>
-              </div>
-            </li>
-            <li>
-              <input type="radio" name="stabs" id="stab5" />
-              <label
-                for="stab5"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel5"
-                tabindex="0"
-                >Для офисов
-                <img src="img/about-Arrow.svg" alt="arrow" />
-              </label>
-              <div
-                id="stab-content5"
-                class="stab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <img
-                  src="img/about-img-sol.jpg"
-                  alt="img"
-                  class="solutions__img"
-                />
-                <div class="solutions__block-img solutions__block-img-1"></div>
-                <div class="solutions__block-img solutions__block-img-2"></div>
-                <div class="solutions__block-img solutions__block-img-3"></div>
-                <div class="solutions__block-img solutions__block-img-4"></div>
-              </div>
-            </li>
-            <li>
-              <input type="radio" name="stabs" id="stab6" />
-              <label
-                for="stab6"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel6"
-                tabindex="0"
-                >Для жилых интерьеров
-                <img src="img/about-Arrow.svg" alt="arrow" />
-              </label>
-              <div
-                id="stab-content6"
-                class="stab-content"
-                role="tabpanel"
-                aria-labelledby="specification"
-                aria-hidden="true"
-              >
-                <img
-                  src="img/about-img-sol.jpg"
-                  alt="img"
-                  class="solutions__img"
-                />
-                <div class="solutions__block-img solutions__block-img-1"></div>
-                <div class="solutions__block-img solutions__block-img-2"></div>
-                <div class="solutions__block-img solutions__block-img-3"></div>
-                <div class="solutions__block-img solutions__block-img-4"></div>
-              </div>
-            </li>
-          </ul>
+        <div class="footer__block footer__block-questions">
+          <a href="#" class="footer__link">Как заказать</a>
+          <a href="#" class="footer__link">Оплата</a>
+          <a href="#" class="footer__link">Доставка</a>
+          <a href="#" class="footer__link">Реквизиты компании</a>
+          <a href="#" class="footer__link">Правовая информация</a>
+          <a href="#" class="footer__link">FAQ</a>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__block footer__block-logo">
-            <img src="img/logo-footer.png" alt="" class="footer__logo" />
-            <p class="footer__text-logo">© Technolight 2015-2021</p>
-          </div>
-          <div class="footer__block footer__block-catalog">
-            <h4 class="footer__catalog-title">Каталог товаров</h4>
-            <ul class="footer__catalog-list">
-              <li class="footer__catalog-item">
-                <a href="#"> Трековые светильники </a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="#"> Встраиваемые светильники </a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="#"> Профильные светильники </a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="#"> Фигурные светильники </a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="#"> Светильники Армстронг </a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="#"> Армстронг с равномерной засветкой </a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="#"> Произовдители </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__block footer__block-questions">
-            <a href="#" class="footer__link">Как заказать</a>
-            <a href="#" class="footer__link">Оплата</a>
-            <a href="#" class="footer__link">Доставка</a>
-            <a href="#" class="footer__link">Реквизиты компании</a>
-            <a href="#" class="footer__link">Правовая информация</a>
-            <a href="#" class="footer__link">FAQ</a>
-          </div>
-          <div class="footer__block footer__block-contact">
-            <h4 class="footer__contact-title">Контакты</h4>
-            <a href="#" class="footer__cont-link link">
-              <img src="img/gps.svg" alt="#" class="footer__gps-icon" />
-              место магазина
-            </a>
-            <a href="#" class="footer__cont-link link">
-              <img src="img/phone.svg" alt="#" class="footer__phone-icon" />
-              +7 (495) 233 55 57
-            </a>
-            <a href="#" class="footer__cont-link link">
-              <img src="img/email.svg" alt="#" class="footer__mail-icon" />
-              info@i-lights.ru
-            </a>
-          </div>
-          <p class="footer__text-logo footer__text-logo-mobile">
-            © Technolight 2015-2021
-          </p>
+        <div class="footer__block footer__block-contact">
+          <h4 class="footer__contact-title">Контакты</h4>
+          <a href="#" class="footer__cont-link link">
+            <img src="img/gps.svg" alt="#" class="footer__gps-icon" />
+            место магазина
+          </a>
+          <a href="#" class="footer__cont-link link">
+            <img src="img/phone.svg" alt="#" class="footer__phone-icon" />
+            +7 (495) 233 55 57
+          </a>
+          <a href="#" class="footer__cont-link link">
+            <img src="img/email.svg" alt="#" class="footer__mail-icon" />
+            info@i-lights.ru
+          </a>
         </div>
-      </footer>
-      <!-- js initialization -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-      <script src="js/main.js"></script>
-    </body>
-  </html>
+        <p class="footer__text-logo footer__text-logo-mobile">
+          © Technolight 2015-2021
+        </p>
+      </div>
+    </footer>
+    <!-- js initialization -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
