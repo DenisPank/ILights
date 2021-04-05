@@ -388,6 +388,7 @@
 
   .about__title {
     font-size: 18px;
+    margin: 35px 0 0 0;
   }
 
   .about__tabs {
@@ -395,6 +396,32 @@
   }
 
   .solutions__wrapper {
+    display: block;
+  }
+
+  .solutions__item-title h3 {
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .about {
+    padding: 20px 0 25px 0;
+  }
+
+  .solutions__text {
+    margin-top: 15px;
+  }
+
+  .solutions__title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .solutions__tabs {
+    display: none;
+  }
+
+  .solutions__card-mobil {
     display: block;
   }
 }

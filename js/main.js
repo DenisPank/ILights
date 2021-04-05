@@ -20,18 +20,23 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).next(".catalog__item-content").toggleClass("active");
   });
+
   $(".solutions__item-title").click(function (e) {
     e.preventDefault();
     $(this).next(".solutions__item-content").toggleClass("active");
+    $(this).toggleClass("active");
   });
+
   $(".services__link").click(function (e) {
     e.preventDefault();
     $(this).next().toggleClass("active");
     $(this).toggleClass("active");
   });
+
   $(".new-products__block").hover(function () {
     $(this).toggleClass("active");
   });
+
   $(".nav__burger").click(function () {
     $(".nav__block, .nav__burger, body").toggleClass("active");
   });
