@@ -26,6 +26,16 @@ $(document).ready(function () {
     $(this).next(".solutions__item-content").toggleClass("active");
     $(this).toggleClass("active");
   });
+  $(".about__item-title").click(function (e) {
+    e.preventDefault();
+    $(this).next(".about__item-content").toggleClass("active");
+    $(this).toggleClass("active");
+  });
+  $(".services__item-title").click(function (e) {
+    e.preventDefault();
+    $(this).next(".services__item-content").toggleClass("active");
+    $(this).toggleClass("active");
+  });
 
   $(".services__link").click(function (e) {
     e.preventDefault();

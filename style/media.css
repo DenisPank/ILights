@@ -112,6 +112,10 @@
     background-position: top right;
     background-size: 55%;
   }
+
+  .services__tabs label {
+    height: 154px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -395,7 +399,9 @@
     display: none;
   }
 
-  .solutions__wrapper {
+  .solutions__wrapper,
+  .about__wrapper,
+  .services__wrapper {
     display: block;
   }
 
@@ -422,6 +428,14 @@
   }
 
   .solutions__card-mobil {
+    display: block;
+  }
+
+  .services__tabs {
+    display: none;
+  }
+
+  .services__text {
     display: block;
   }
 }
@@ -491,6 +505,36 @@
     width: 200px;
     letter-spacing: 0.01em;
     line-height: 1.7em;
+  }
+
+  .solutions__block-img-1-mobil {
+    height: 164px;
+  }
+
+  .solutions__block-img-2-mobil,
+  .solutions__block-img-3-mobil,
+  .solutions__block-img-4-mobil {
+    height: 83px;
+  }
+
+  .solutions__block-img-3-mobil {
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+  }
+
+  .services__item-title h3 {
+    transition: all 0.2s ease;
+    padding: 24px 123px 17px 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .services__title {
+    margin: 35px 0 25px 0;
+  }
+
+  .solutions {
+    padding: 20px 0 30px 0;
   }
 }
 @media screen and (max-width: 425px) {
@@ -562,6 +606,28 @@
   .footer__text-logo-mobile {
     font-size: 11px;
   }
+
+  .solutions__block-img-1-mobil {
+    height: 145px;
+  }
+
+  .services__item-title h3 {
+    padding: 24px 95px 17px 20px;
+    font-size: 14px;
+  }
+
+  .services__text span {
+    font-size: 12px;
+  }
+
+  .services {
+    padding: 20px 0;
+  }
+
+  .solutions__block-img-3-mobil {
+    border-left: 11px solid white;
+    border-right: 11px solid white;
+  }
 }
 @media screen and (max-width: 375px) {
   .container {
@@ -608,6 +674,14 @@
   .footer__block-questions {
     padding-left: 30px;
   }
+
+  .solutions__block-img-1-mobil {
+    height: 116px;
+  }
+
+  .services__item-title h3 {
+    padding: 24px 60px 17px 20px;
+  }
 }
 @media screen and (max-width: 320px) {
   .container {
@@ -644,5 +718,11 @@
 
   .btn {
     font-size: 15px;
+  }
+
+  .solutions__block-img-2-mobil,
+  .solutions__block-img-3-mobil,
+  .solutions__block-img-4-mobil {
+    height: 70px;
   }
 }
