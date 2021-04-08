@@ -117,3 +117,11 @@ function goSearch() {
   winHref += `?catalogSliderAngle1=${catalogSliderAngle.noUiSlider.get()}`;
   winHref += `?catalogSliderPrice1=${catalogSliderPrice.noUiSlider.get()}`;
 }
+
+$(".new-products__block").hover(function () {
+  $(this).toggleClass("active");
+});
+
+$(".nav__burger").click(function () {
+  $(".nav__block, .nav__burger, body").toggleClass("active");
+});
