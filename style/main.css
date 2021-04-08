@@ -294,7 +294,7 @@ textarea {
 /* header  */
 /*************************** catalog  ****************************/
 .catalog {
-  padding: 90px 0 0 0;
+  padding: 90px 0 50px 0;
 }
 
 .catalog__list {
@@ -1524,6 +1524,11 @@ body.active {
 }
 /* services  */
 /****************************************** catalog  *******************************/
+
+.catalog .container {
+  position: relative;
+}
+
 .catalog__title {
   font-weight: bold;
   font-size: 24px;
@@ -1560,9 +1565,10 @@ body.active {
 
 .catalog__filter {
   width: 300px;
-  height: 410px;
   border: 1px solid #eaeaea;
   padding: 25px 25px 25px 19px;
+  position: absolute;
+  top: 270px;
 }
 
 .catalog__title-wrapper {
@@ -1570,15 +1576,16 @@ body.active {
   justify-content: space-between;
   margin-bottom: 25px;
 }
-.catalog__title-filter {
-}
-.catalog__title-icon {
-}
+
 .catalog__bar {
   margin-bottom: 30px;
 }
+
 .catalog__label {
   margin-bottom: 30px;
+  font-size: 14;
+  font-weight: 600;
+  color: rgba(83, 83, 83, 1);
 }
 .catalog__btn-wrapper {
   display: flex;
@@ -1657,7 +1664,84 @@ body.active {
   height: fit-content;
 }
 
+.noUi-tooltip {
+  display: none;
+}
+
+.noUi-touch-area:hover + .noUi-tooltip {
+  display: block;
+}
+
 /* range slider  */
+
+.catalog__novelty {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.catalog__novelty-wrapper {
+  width: 955px;
+  margin: 55px 0 50px auto;
+}
+
+.catalog__products-wrapper {
+  width: 955px;
+  margin: 50px 0 0 auto;
+}
+
+.catalog__products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
+  width: fit-content;
+  grid-gap: 24px;
+}
+
+.catalog__pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.catalog__pagination ul li {
+  display: inline-block;
+}
+
+.catalog__pagination ul li a {
+  color: #464855;
+  font-size: 12px;
+  font-weight: 400;
+  float: left;
+  padding: 4px 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin: 0 5px;
+}
+
+.catalog__pagination ul li:first-child a,
+.catalog__pagination ul li:last-child a {
+  padding: 6px 8px;
+  display: flex;
+  color: rgba(83, 83, 83, 1);
+}
+
+.catalog__pagination ul li:last-child a {
+  transform: rotate(180deg);
+}
+
+.catalog__pagination ul li a.active {
+  background-color: rgba(255, 201, 79, 1);
+  color: rgba(83, 83, 83, 1);
+  font-weight: 700;
+  border: 1px solid rgba(255, 201, 79, 1);
+}
+
+.catalog__pagination ul li a:hover:not(.active) {
+  background-color: #ddd;
+}
 
 /* catalog  */
 /****************************************** about  *******************************/
