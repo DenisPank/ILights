@@ -22,10 +22,6 @@ noUiSlider.create(catalogSliderPower, {
   },
 });
 
-catalogSliderPower.noUiSlider.on("change", (values, handle) => {
-  console.log(catalogSliderPower.noUiSlider.get());
-});
-
 const catalogSliderLightOutput = document.getElementById(
   "catalog__slider-light-output"
 );
@@ -110,14 +106,6 @@ resetButton.onclick = (e) => {
   catalogSliderPrice.noUiSlider.reset();
 };
 
-function goSearch() {
-  let winHref = window.location.href.split("?")[0];
-  winHref += `?catalogSliderPower1=${catalogSliderPower.noUiSlider.get()}`;
-  winHref += `?catalogSliderLightOutput1=${catalogSliderLightOutput.noUiSlider.get()}`;
-  winHref += `?catalogSliderAngle1=${catalogSliderAngle.noUiSlider.get()}`;
-  winHref += `?catalogSliderPrice1=${catalogSliderPrice.noUiSlider.get()}`;
-}
-
 $(".new-products__block").hover(function () {
   $(this).toggleClass("active");
 });
@@ -125,3 +113,25 @@ $(".new-products__block").hover(function () {
 $(".nav__burger").click(function () {
   $(".nav__block, .nav__burger, body").toggleClass("active");
 });
+
+$(".catalog__title-wrapper").click(function () {
+  $(".catalog__title-wrapper").toggleClass("active");
+});
+
+catalogSliderPower.noUiSlider.on("change", (values, handle) => {
+  console.log(catalogSliderPower.noUiSlider.get());
+});
+
+$('<div class="catalog__bar-mobil"><p>Мощность</p></div>').insertAfter(
+  ".catalog__filter .catalog__bar:nth-child(2)"
+);
+
+$('<div class="catalog__bar-mobil"><p>Световой поток</p></div>').insertAfter(
+  ".catalog__filter .catalog__bar:nth-child(4)"
+);
+$('<div class="catalog__bar-mobil"><p>Цена min</p></div>').insertAfter(
+  ".catalog__filter .catalog__bar:nth-child(6)"
+);
+$('<div class="catalog__bar-mobil"><p>Угол рассеивания</p></div>').insertAfter(
+  ".catalog__filter .catalog__bar:nth-child(8)"
+);
