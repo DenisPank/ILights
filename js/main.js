@@ -96,3 +96,27 @@ let heigthTabContentServices = $(".tab-content").height();
 $(".services__tabs").css({ height: heigthTabContentServices + 126 });
 
 // services
+
+// details
+new Swiper(".details-swiper-container", {
+  loop: true,
+  direction: "vertical",
+  thumbs: {
+    swiper: {
+      el: ".details-mini-swiper-container",
+      direction: "vertical",
+      slidesPerView: 5,
+      loop: true,
+      navigation: {
+        nextEl: ".details-mini-swiper-button-next",
+        prevEl: ".details-mini-swiper-button-prev",
+      },
+    },
+  },
+});
+
+$(".details__character-number, .details__character-type").click(function (e) {
+  e.preventDefault();
+});
+
+// details

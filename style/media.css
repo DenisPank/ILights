@@ -904,10 +904,50 @@
 
   .catalog__novelty .new-products__block {
     width: 100%;
+    height: 340px;
   }
 
   .catalog__products {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .catalog {
+    padding: 20px 0 30px 0;
+  }
+
+  .catalog__bar-mobil {
+    font-size: 12px;
+  }
+
+  .catalog__title-filter {
+    font-size: 14px;
+  }
+
+  .catalog__title-wrapper.active
+    ~ .catalog__btn-wrapper
+    .catalog__btn:nth-child(1) {
+    font-size: 12px;
+  }
+
+  .catalog__title {
+    margin: 25px 0 295px 0;
+  }
+
+  .catalog__title,
+  .catalog__title-novelty {
+    font-size: 18px;
+  }
+
+  .catalog__filter-type {
+    top: 75px;
+  }
+
+  .catalog__filter {
+    top: 125px;
+  }
+
+  .catalog__novelty .new-products__block .new-products__img-offer {
+    top: 155px;
   }
 }

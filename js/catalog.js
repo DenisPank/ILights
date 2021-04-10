@@ -122,16 +122,16 @@ catalogSliderPower.noUiSlider.on("change", (values, handle) => {
   console.log(catalogSliderPower.noUiSlider.get());
 });
 
-$('<div class="catalog__bar-mobil"><p>Мощность</p></div>').insertAfter(
+$('<div class="catalog__bar-mobil"><p>Мощность 130</p></div>').insertAfter(
   ".catalog__filter .catalog__bar:nth-child(2)"
 );
 
-$('<div class="catalog__bar-mobil"><p>Световой поток</p></div>').insertAfter(
-  ".catalog__filter .catalog__bar:nth-child(4)"
-);
-$('<div class="catalog__bar-mobil"><p>Цена min</p></div>').insertAfter(
+$(
+  '<div class="catalog__bar-mobil"><p>Световой поток 53 820</p></div>'
+).insertAfter(".catalog__filter .catalog__bar:nth-child(4)");
+$('<div class="catalog__bar-mobil"><p>Цена min 10 000</p></div>').insertAfter(
   ".catalog__filter .catalog__bar:nth-child(6)"
 );
-$('<div class="catalog__bar-mobil"><p>Угол рассеивания</p></div>').insertAfter(
-  ".catalog__filter .catalog__bar:nth-child(8)"
-);
+$(
+  '<div class="catalog__bar-mobil"><p>Угол рассеивания 160</p></div>'
+).insertAfter(".catalog__filter .catalog__bar:nth-child(8)");

@@ -1444,7 +1444,7 @@ body.active {
   margin-bottom: 0;
 }
 
-.services__wrapper {
+.services__wrapper-two {
   display: none;
 }
 .services__list {
@@ -1524,6 +1524,10 @@ body.active {
 }
 /* services  */
 /****************************************** catalog  *******************************/
+
+.catalog.shop {
+  padding: 20px 0 50px;
+}
 
 .catalog .container {
   position: relative;
@@ -1808,8 +1812,111 @@ body.active {
 }
 
 /* catalog  */
-/****************************************** about  *******************************/
-/* about  */
+/****************************************** services__wrapper  *******************************/
+.details {
+  padding: 20px 0 15px 0;
+}
+
+.details__swiper {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 70px;
+}
+
+.details-swiper-container {
+  width: 525px;
+  height: 525px;
+  margin-left: 0;
+}
+
+.details-mini-swiper-button-prev {
+  transform: translateX(-50%);
+  left: 50%;
+  top: 22px;
+}
+.details-mini-swiper-button-prev img {
+  transform: rotate(-90deg);
+}
+.details-mini-swiper-button-next {
+  transform: translateX(-50%);
+  top: 520px;
+  left: 50%;
+}
+.details-mini-swiper-button-next img {
+  transform: rotate(90deg);
+}
+
+.details-mini-swiper-container {
+  height: 525px;
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.details-mini-swiper-button-next:after,
+.details-mini-swiper-button-prev:after {
+  content: "";
+}
+
+.details-mini-swiper-button-next,
+.details-mini-swiper-button-prev {
+  border: 1px solid #ededed;
+  border-radius: 0px 0px 2px 2px;
+  width: fit-content;
+  height: fit-content;
+  padding: 7px 37px;
+  background: white;
+}
+
+.details-mini-swiper-container {
+  margin-left: 0;
+}
+
+.details-swiper-slide {
+  text-align: center;
+}
+.details-swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.details-mini-swiper-slide img {
+  border-radius: 2px;
+}
+
+.details__name-product {
+  padding: 0;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.details__character-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(83, 83, 83, 1);
+}
+
+.details__character-number,
+.details__character-type {
+  border-radius: 2px;
+  border: 1px solid rgba(237, 237, 237, 1);
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(140, 140, 140, 1);
+  padding: 5px 13px;
+  display: block;
+  width: fit-content;
+}
+
+.details__character-number-pover:focus,
+.details__character-type:focus {
+  color: rgba(83, 83, 83, 1);
+  border: 1px solid #ffc94f;
+  font-weight: 500;
+}
+/* services__wrapper  */
 /****************************************** about  *******************************/
 /* about  */
 /****************************************** about  *******************************/
