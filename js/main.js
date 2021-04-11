@@ -115,8 +115,48 @@ new Swiper(".details-swiper-container", {
   },
 });
 
-$(".details__character-number, .details__character-type").click(function (e) {
-  e.preventDefault();
+//  CHECKBOX
+$.each($(".details__checkbox"), function (index, val) {
+  if ($(this).find("input").prop("checked") == true) {
+    $(this).addClass("active");
+  }
+});
+$(document).on("click", ".details__checkbox", function (event) {
+  if ($(this).hasClass("active")) {
+    $(this).find("input").prop("checked", false);
+  } else {
+    $(this).find("input").prop("checked", true);
+  }
+  $(this).toggleClass("active");
+  return false;
 });
 
 // details
+// product-description
+
+let heigthProductDescriptionTabs = $(
+  ".product-description__tabs li .tab-content"
+).height();
+$(".product-description__tabs").css({
+  height: heigthProductDescriptionTabs + 100,
+});
+
+// selected-modifications
+$.each($(".selected-modifications__add-product"), function (index, val) {
+  if ($(this).find("input").prop("checked") == true) {
+    $(this).addClass("active");
+  }
+});
+$(document).on(
+  "click",
+  ".selected-modifications__add-product",
+  function (event) {
+    if ($(this).hasClass("active")) {
+      $(this).find("input").prop("checked", false);
+    } else {
+      $(this).find("input").prop("checked", true);
+    }
+    $(this).toggleClass("active");
+    return false;
+  }
+);

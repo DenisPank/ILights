@@ -148,45 +148,386 @@
             </div>
           </div>
         </div>
-        <div class="details__info-product">
+        <form class="details__info-product" action="#" method="GET">
           <h2 class="details__name-product">Трековый светильник EVO L</h2>
-          <form class="details__character-wrapper" action="#" method="#">
+          <div class="details__character-form">
+            <p class="details__character-text">Мощность</p>
             <div class="details__character">
-              <p class="details__character-text">Мощность</p>
-              <a href="#" class="details__character-number details__character-number-pover">15</a>
-              <a href="#" class="details__character-number details__character-number-pover">22</a>
-              <a href="#" class="details__character-number details__character-number-pover">28</a>
-              <a href="#" class="details__character-number details__character-number-pover">42</a>
-              <a href="#" class="details__character-number details__character-number-pover">43</a>
-              <a href="#" class="details__character-number details__character-number-pover">65</a>
-              <a href="#" class="details__character-number details__character-number-pover">66</a>
-              <a href="#" class="details__character-number details__character-number-pover">86</a>
-              <a href="#" class="details__character-number details__character-number-pover">84</a>
-              <a href="#" class="details__character-number details__character-number-pover">130</a>
+              <div class="details__checkbox">
+                15
+                <input type="checkbox" checked name="namecheckbox_1" />
+              </div>
+              <div class="details__checkbox">
+                22
+                <input type="checkbox" name="namecheckbox_2" />
+              </div>
+              <div class="details__checkbox">
+                28
+                <input type="checkbox" name="namecheckbox_3" />
+              </div>
+              <div class="details__checkbox">
+                42
+                <input type="checkbox" name="namecheckbox_4" />
+              </div>
+              <div class="details__checkbox">
+                43
+                <input type="checkbox" name="namecheckbox_5" />
+              </div>
+              <div class="details__checkbox">
+                65
+                <input type="checkbox" name="namecheckbox_6" />
+              </div>
+              <div class="details__checkbox">
+                66
+                <input type="checkbox" name="namecheckbox_7" />
+              </div>
+              <div class="details__checkbox">
+                86
+                <input type="checkbox" name="namecheckbox_8" />
+              </div>
+              <div class="details__checkbox">
+                84
+                <input type="checkbox" name="namecheckbox_9" />
+              </div>
+              <div class="details__checkbox">
+                130
+                <input type="checkbox" name="namecheckbox_10" />
+              </div>
             </div>
-            <div class="details__character">
-              <p class="details__character-text">Цвет корпуса</p>
-              <a href="#" class="details__character-type">белый</a>
-              <a href="#" class="details__character-type">черный</a>
-              <a href="#" class="details__character-type">серый</a>
+            <p class="details__character-text">Цвет корпуса</p>
+            <div class="details__character details__character-color">
+              <div class="details__checkbox">
+                белый
+                <input type="checkbox" name="namecheckbox_11" />
+              </div>
+              <div class="details__checkbox">
+                черный
+                <input type="checkbox" name="namecheckbox_12" />
+              </div>
+              <div class="details__checkbox">
+                серый
+                <input type="checkbox" name="namecheckbox_13" />
+              </div>
             </div>
-            <div class="details__character">
-              <p class="details__character-text">Угол рассеивания</p>
-              <a href="#" class="details__character-number">85</a>
+            <p class="details__character-text">Угол рассеивания</p>
+            <div class="details__character details__character-angle">
+              <div class="details__checkbox">
+                85
+                <input type="checkbox" name="namecheckbox_14" />
+              </div>
             </div>
-            <div class="details__character">
-              <p class="details__character-text">Цветовая 
-                температура</p>
-              <a href="#" class="details__character-number">3000</a>
-              <a href="#" class="details__character-number">4000</a>
-              <a href="#" class="details__character-number">5000</a>
+            <p class="details__character-text">Цветовая температура</p>
+            <div class="details__character details__character-temp">
+              <div class="details__checkbox">
+                3000
+                <input type="checkbox" name="namecheckbox_11" />
+              </div>
+              <div class="details__checkbox">
+                4000
+                <input type="checkbox" name="namecheckbox_12" />
+              </div>
+              <div class="details__checkbox">
+                5000
+                <input type="checkbox" name="namecheckbox_13" />
+              </div>
             </div>
-            <div class="details__character">
-              <p class="details__character-text">CRI/Ra</p>
-              <a href="#" class="details__character-number">80+</a>
+            <p class="details__character-text">CRI/Ra</p>
+            <div class="details__character details__character-cri">
+              <div class="details__checkbox">
+                80+
+                <input type="checkbox" name="namecheckbox_13" />
+              </div>
             </div>
-          </form>
-          <a href="#" class="details__btn link">Посмотреть  выбранные модификации</a>
+          </div>
+          <button type="submit" class="details__btn-form link">
+            Посмотреть выбранные модификации
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="product-description">
+      <div class="container">
+        <ul class="product-description__tabs" role="tablist">
+          <li>
+            <input type="radio" name="tabs" id="tab1" checked />
+            <label
+              for="tab1"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel1"
+              tabindex="0"
+              >Описание</label
+            >
+            <div
+              id="tab-content1"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="description"
+              aria-hidden="false"
+            >
+              <p>
+                Потолочный светильник LINE A подвесного или накладного монтажа
+                предназначен для организации основного освещения помещений.
+                Различные длины, мощности, варианты рассеивателей и возможности
+                подключения к различным системам управления освещением делают
+                светильники серии LINE A всесторонне продуманным решением для
+                помещений любой конфигурации и функциональных назначений.
+                Алюминиевый корпус окрашивается высококачественным матовым или
+                глянцевым порошковым покрытием черного, белого, либо любого
+                цвета по шкале RAL.
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab2" />
+            <label
+              for="tab2"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel2"
+              tabindex="0"
+              >Технические характеристики</label
+            >
+            <div
+              id="tab-content2"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <p>
+                Потолочный светильник LINE A подвесного или накладного монтажа
+                предназначен для организации основного освещения помещений.
+                Различные длины, мощности, варианты рассеивателей и возможности
+                подключения к различным системам управления освещением делают
+                светильники серии LINE A всесторонне продуманным решением для
+                помещений любой конфигурации и функциональных назначений.
+                Алюминиевый корпус окрашивается высококачественным матовым или
+                глянцевым порошковым покрытием черного, белого, либо любого
+                цвета по шкале RAL.
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab3" />
+            <label
+              for="tab3"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel3"
+              tabindex="0"
+              >Конструктивные характеристики</label
+            >
+            <div
+              id="tab-content3"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <p>
+                Потолочный светильник LINE A подвесного или накладного монтажа
+                предназначен для организации основного освещения помещений.
+                Различные длины, мощности, варианты рассеивателей и возможности
+                подключения к различным системам управления освещением делают
+                светильники серии LINE A всесторонне продуманным решением для
+                помещений любой конфигурации и функциональных назначений.
+                Алюминиевый корпус окрашивается высококачественным матовым или
+                глянцевым порошковым покрытием черного, белого, либо любого
+                цвета по шкале RAL.
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab4" />
+            <label
+              for="tab4"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel4"
+              tabindex="0"
+              >Материалы для скачивания</label
+            >
+            <div
+              id="tab-content4"
+              class="tab-content"
+              role="tabpanel"
+              aria-labelledby="specification"
+              aria-hidden="true"
+            >
+              <p>
+                Потолочный светильник LINE A подвесного или накладного монтажа
+                предназначен для организации основного освещения помещений.
+                Различные длины, мощности, варианты рассеивателей и возможности
+                подключения к различным системам управления освещением делают
+                светильники серии LINE A всесторонне продуманным решением для
+                помещений любой конфигурации и функциональных назначений.
+                Алюминиевый корпус окрашивается высококачественным матовым или
+                глянцевым порошковым покрытием черного, белого, либо любого
+                цвета по шкале RAL.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="product-description__skill">
+          <h5 class="product-description__title">Особенности:</h5>
+          <ul class="product-description__list">
+            <li class="product-description__item">
+              <p>
+                Различные варианты рассеивателей: матовый / микропризматический
+                / прозрачный.
+              </p>
+            </li>
+            <li class="product-description__item">
+              <p>
+                Источники питания с гальвонической развязкой установлены внутри
+                корпуса светильника;
+              </p>
+            </li>
+            <li class="product-description__item">
+              <p>
+                Возможность соединения последовательно для получения сплошных
+                линий засветки длинной до 30м.
+              </p>
+            </li>
+            <li class="product-description__item">
+              <p>
+                Возможность декорирование под дерево и другие материалы, либо
+                отделка деревом благородных пород
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="product-description__areas">
+          <h5 class="product-description__title">Области применения:</h5>
+          <ul class="product-description__list">
+            <li class="product-description__item">
+              <p>Торговое освещение</p>
+            </li>
+            <li class="product-description__item">
+              <p>Офисное освещение</p>
+            </li>
+            <li class="product-description__item">
+              <p>Обьекты бьюти индустрии</p>
+            </li>
+            <li class="product-description__item">
+              <p>HoReCa - отели, рестораны, кафе</p>
+            </li>
+            <li class="product-description__item">
+              <p>Проходные зоны любых общественных пространств</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="selected-modifications">
+      <div class="container">
+        <h4 class="selected-modifications__title">Выбранные модификации</h4>
+        <p class="selected-modifications__amount">Паказано 4 из 15</p>
+        <form action="#" method="GET" class="selected-modifications__form">
+          <div class="selected-modifications__head-table">
+            <h6>Наименование</h6>
+            <h6>Мощность</h6>
+            <h6>Цвет корпуса</h6>
+            <h6>Габариты [ВxДxШ]</h6>
+            <h6>Световой поток LED [лкм]</h6>
+            <h6>Угол рассеивания</h6>
+            <h6>Эфективность LW/W</h6>
+            <h6>Цветовая температура</h6>
+            <h6>CRI/Ra</h6>
+            <h6>Управление светом</h6>
+            <h6>Цена</h6>
+            <h6>Добавить в подборку</h6>
+          </div>
+          <div class="selected-modifications__product-item">
+            <h6>LINE A 50-14W -830-WH</h6>
+            <p>14</p>
+            <p>белый</p>
+            <p>20х15х10</p>
+            <p>1672</p>
+            <p>119.43</p>
+            <p>119.43</p>
+            <p>3000</p>
+            <p>80+</p>
+            <p>no</p>
+            <p>2700</p>
+            <div class="selected-modifications__add-product">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <input type="checkbox" name="namecheckbox_1" />
+            </div>
+          </div>
+          <div class="selected-modifications__product-item">
+            <h6>LINE A 50-14W -830-WH</h6>
+            <p>14</p>
+            <p>белый</p>
+            <p>20х15х10</p>
+            <p>1672</p>
+            <p>119.43</p>
+            <p>119.43</p>
+            <p>3000</p>
+            <p>80+</p>
+            <p>no</p>
+            <p>2700</p>
+            <div class="selected-modifications__add-product">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <input type="checkbox" name="namecheckbox_2" />
+            </div>
+          </div>
+          <div class="selected-modifications__product-item">
+            <h6>LINE A 50-14W -830-WH</h6>
+            <p>14</p>
+            <p>белый</p>
+            <p>20х15х10</p>
+            <p>1672</p>
+            <p>119.43</p>
+            <p>119.43</p>
+            <p>3000</p>
+            <p>80+</p>
+            <p>no</p>
+            <p>2700</p>
+            <div class="selected-modifications__add-product">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <input type="checkbox" name="namecheckbox_3" />
+            </div>
+          </div>
+          <div class="selected-modifications__product-item">
+            <h6>LINE A 50-14W -830-WH</h6>
+            <p>14</p>
+            <p>белый</p>
+            <p>20х15х10</p>
+            <p>1672</p>
+            <p>119.43</p>
+            <p>119.43</p>
+            <p>3000</p>
+            <p>80+</p>
+            <p>no</p>
+            <p>2700</p>
+            <div class="selected-modifications__add-product">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <input type="checkbox" name="namecheckbox_4" />
+            </div>
+          </div>
+          <div class="selected-modifications__product-item">
+            <h6>LINE A 50-14W -830-WH</h6>
+            <p>14</p>
+            <p>белый</p>
+            <p>20х15х10</p>
+            <p>1672</p>
+            <p>119.43</p>
+            <p>119.43</p>
+            <p>3000</p>
+            <p>80+</p>
+            <p>no</p>
+            <p>2700</p>
+            <div class="selected-modifications__add-product">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <input type="checkbox" name="namecheckbox_5" />
+            </div>
+          </div>
+        </form>
+        <a href="#" class="selected-modification__link-collection link"
+          >Все модификации</a
+        >
       </div>
     </section>
     <footer class="footer">
