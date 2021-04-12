@@ -7,13 +7,12 @@ if ($(window).width() <= 769) {
     thumbs: {
       swiper: {
         el: ".details-mini-mobil-swiper-container",
-        slidesPerView: 3,
         loop: true,
         spaceBetween: 10,
         direction: "horizontal",
         breakpoints: {
-          768: {},
-          320: {},
+          577: { slidesPerView: 5 },
+          320: { slidesPerView: 3 },
         },
       },
     },
