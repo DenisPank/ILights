@@ -36,6 +36,11 @@ $(document).ready(function () {
     $(this).next(".services__item-content").toggleClass("active");
     $(this).toggleClass("active");
   });
+  $(".product-bookmark__item-title").click(function (e) {
+    e.preventDefault();
+    $(this).next(".product-bookmark__item-content").toggleClass("active");
+    $(this).toggleClass("active");
+  });
 
   $(".services__link").click(function (e) {
     e.preventDefault();
@@ -96,67 +101,3 @@ let heigthTabContentServices = $(".tab-content").height();
 $(".services__tabs").css({ height: heigthTabContentServices + 126 });
 
 // services
-
-// details
-new Swiper(".details-swiper-container", {
-  loop: true,
-  direction: "vertical",
-  thumbs: {
-    swiper: {
-      el: ".details-mini-swiper-container",
-      direction: "vertical",
-      slidesPerView: 5,
-      loop: true,
-      navigation: {
-        nextEl: ".details-mini-swiper-button-next",
-        prevEl: ".details-mini-swiper-button-prev",
-      },
-    },
-  },
-});
-
-//  CHECKBOX
-$.each($(".details__checkbox"), function (index, val) {
-  if ($(this).find("input").prop("checked") == true) {
-    $(this).addClass("active");
-  }
-});
-$(document).on("click", ".details__checkbox", function (event) {
-  if ($(this).hasClass("active")) {
-    $(this).find("input").prop("checked", false);
-  } else {
-    $(this).find("input").prop("checked", true);
-  }
-  $(this).toggleClass("active");
-  return false;
-});
-
-// details
-// product-description
-
-let heigthProductDescriptionTabs = $(
-  ".product-description__tabs li .tab-content"
-).height();
-$(".product-description__tabs").css({
-  height: heigthProductDescriptionTabs + 100,
-});
-
-// selected-modifications
-$.each($(".selected-modifications__add-product"), function (index, val) {
-  if ($(this).find("input").prop("checked") == true) {
-    $(this).addClass("active");
-  }
-});
-$(document).on(
-  "click",
-  ".selected-modifications__add-product",
-  function (event) {
-    if ($(this).hasClass("active")) {
-      $(this).find("input").prop("checked", false);
-    } else {
-      $(this).find("input").prop("checked", true);
-    }
-    $(this).toggleClass("active");
-    return false;
-  }
-);

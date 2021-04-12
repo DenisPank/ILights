@@ -1871,10 +1871,6 @@ body.active {
   background: white;
 }
 
-.details-mini-swiper-container {
-  margin-left: 0;
-}
-
 .details-swiper-slide {
   text-align: center;
 }
@@ -1982,6 +1978,15 @@ body.active {
   margin-top: 20px;
 }
 
+.details-mini-mobil-swiper-slide {
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.details-mini-mobil-swiper-container {
+  display: none;
+}
+
 /* services__wrapper  */
 /****************************************** product-description  *******************************/
 
@@ -2086,6 +2091,71 @@ body.active {
 .product-description {
   padding: 30px 0 25px 0;
 }
+
+.product-bookmark__wrapper {
+  display: none;
+}
+
+.product-bookmark__item-content {
+  display: none;
+}
+
+.product-bookmark__item-content.active {
+  display: block;
+}
+
+.product-bookmark__item-title {
+  display: block;
+  position: relative;
+  color: rgba(83, 83, 83, 1);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 17px 0;
+}
+
+.product-bookmark__item {
+  border-top: 1px solid rgba(237, 237, 237, 1);
+}
+.product-bookmark__item:last-child {
+  border-bottom: 1px solid rgba(237, 237, 237, 1);
+}
+
+.product-bookmark__item-title::after,
+.product-bookmark__item-title::before {
+  display: block;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  background: rgba(83, 83, 83, 1);
+  height: 10px;
+  width: 3px;
+  right: 6px;
+  transition: all 0.2s ease;
+}
+
+.product-bookmark__item-title::after {
+  transform: translateY(0%) rotate(45deg);
+}
+.product-bookmark__item-title::before {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.product-bookmark__item-title.active::before {
+  transform: translateY(-50%) rotate(-45deg) translateX(-7px);
+}
+
+.product-bookmark__item-title.active {
+  border: none;
+}
+
+.product-bookmark__text {
+  color: rgba(83, 83, 83, 1);
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
 /* product-description  */
 /****************************************** selected-modifications  ***************************/
 
@@ -2133,10 +2203,11 @@ body.active {
 }
 
 .selected-modifications__add-product {
+  display: block !important;
   justify-self: center;
   align-self: center;
   background: rgba(83, 83, 83, 1);
-  color: white;
+  color: white !important;
   width: 22px;
   height: 22px;
   text-align: center;
@@ -2169,8 +2240,84 @@ body.active {
 }
 
 .selected-modifications__add-product.active {
-  background: rgba(255, 201, 79, 1);
+  background: rgba(255, 201, 79, 1) !important;
 }
+
+.selected-modifications__product-mobil-title {
+  font-size: 16px;
+  color: rgba(83, 83, 83, 1);
+  font-weight: 400;
+  padding: 16px 0;
+  position: relative;
+}
+
+.selected-modifications__product-mobil-wrapper,
+.selected-modifications__product-mobil-item {
+  display: none;
+}
+
+.selected-modifications__product-mobil-wrapper.active {
+  display: block;
+}
+
+.selected-modifications__product-mobil-wrapper div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: rgba(83, 83, 83, 1);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.selected-modifications__product-mobil-wrapper div div {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.selected-modifications__product-mobil-wrapper div .text {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.selected-modifications__product-mobil-add {
+  border-bottom: 1px solid rgba(237, 237, 237, 1);
+  border-top: 1px solid rgba(237, 237, 237, 1);
+  padding: 10px 0;
+}
+
+.selected-modifications__product-mobil-add div p,
+.selected-modifications__product-mobil-add div .text {
+  font-weight: 700;
+  margin-right: 15px;
+  max-width: 90px;
+}
+
+.selected-modifications__product-mobil-title::after,
+.selected-modifications__product-mobil-title::before {
+  display: block;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  background: rgba(83, 83, 83, 1);
+  height: 10px;
+  width: 3px;
+  right: 6px;
+  transition: all 0.2s ease;
+}
+
+.selected-modifications__product-mobil-title::after {
+  transform: translateY(0%) rotate(45deg);
+}
+.selected-modifications__product-mobil-title::before {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.selected-modifications__product-mobil-title.active::before {
+  transform: translateY(-50%) rotate(-45deg) translateX(-7px);
+}
+
 /* selected-modifications  */
 /****************************************** about  *******************************/
 /* about  */
