@@ -101,3 +101,16 @@ let heigthTabContentServices = $(".tab-content").height();
 $(".services__tabs").css({ height: heigthTabContentServices + 126 });
 
 // services
+// set
+
+let numer = 1;
+$("#buttonCountPlus").click(function () {
+  numer = numer + 1;
+  $("#buttonCountNumber").html(numer);
+});
+$("#buttonCountMinus").click(function () {
+  if (numer > 0) {
+    numer = numer - 1;
+    $("#buttonCountNumber").html(numer);
+  }
+});
