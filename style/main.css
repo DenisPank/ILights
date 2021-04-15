@@ -4,6 +4,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -2417,7 +2421,7 @@ body.active {
 .set__input {
   padding: 0;
 }
-#buttonCountNumber {
+.buttonCountNumber {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 25px;
@@ -2427,8 +2431,8 @@ body.active {
   width: 25px;
 }
 
-#buttonCountPlus,
-#buttonCountMinus {
+.buttonCountPlus,
+.buttonCountMinus {
   padding: 0;
   border: none;
   background: rgba(61, 79, 100, 1);
@@ -2552,6 +2556,7 @@ body.active {
   font-weight: 700;
   font-size: 14px;
   color: rgba(83, 83, 83, 1);
+  margin-right: 175px;
 }
 
 .set__btn {
@@ -2578,6 +2583,154 @@ body.active {
   font-weight: 700;
   background: rgba(255, 201, 79, 1);
   border: 1px solid rgba(255, 201, 79, 1);
+}
+
+.modal__mail {
+  width: 360px;
+  position: fixed;
+  text-align: center;
+  background: white;
+  padding: 61px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: -50%;
+  left: calc(50% - 180px);
+  transition: all 0.8s ease;
+  transform: perspective(600px) translate(0, -50%) rotateX(45deg);
+  opacity: 0;
+  z-index: 3;
+}
+
+.modal__close-wind {
+  position: fixed;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.modal__close-wind.active {
+  display: block;
+}
+
+.modal__mail.active {
+  top: 50%;
+  opacity: 1;
+  transform: perspective(0) translate(0, -50%) rotateX(0);
+}
+
+.modal__close,
+.modal__close-thank {
+  display: block;
+  position: absolute;
+  font-weight: 800;
+  font-size: 25px;
+  transform: rotate(45deg);
+  top: 5px;
+  right: 10px;
+  color: rgba(83, 83, 83, 1);
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form input {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px 0 10px 0;
+}
+
+.modal__form input:first-child {
+  padding-top: 0;
+}
+
+.data__checkbox {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(166, 166, 166, 1);
+}
+
+.data__checkbox a {
+  text-decoration: underline;
+  color: rgba(166, 166, 166, 1);
+}
+
+.data__checkbox input {
+  display: none;
+}
+
+#modal__data {
+  display: inline-block;
+  border: 1px solid #ffc94f;
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+#modal__data i {
+  display: none;
+  font-size: 9px;
+}
+#modal__data.active i {
+  display: block;
+}
+
+.modal__btn {
+  color: rgba(70, 72, 85, 1);
+  padding: 14px;
+  margin-top: 30px;
+}
+
+.modal__thank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 360px;
+  text-align: center;
+  color: rgba(83, 83, 83, 1);
+  padding: 80px 10px;
+  display: none;
+  z-index: 4;
+}
+
+.modal__thank.active {
+  display: block;
+}
+
+.modal__title-thank {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal__text-thank {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.modal__subtitle-thank {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(83, 83, 83, 1);
 }
 /* set  */
 /****************************************** about  *******************************/

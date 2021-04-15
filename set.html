@@ -122,9 +122,9 @@
               </div>
             </div>
             <form action="#" class="set__form" method="GET">
-              <input type="button" id="buttonCountPlus" value="+" />
-              <div id="buttonCountNumber">1</div>
-              <input type="button" id="buttonCountMinus" value="-" />
+              <input type="button" class="buttonCountPlus" value="+" />
+              <div class="buttonCountNumber">1</div>
+              <input type="button" class="buttonCountMinus" value="-" />
               <p class="set__alert">Осталось 2 шт</p>
             </form>
             <p class="set__price">
@@ -133,7 +133,7 @@
             <a href="#" class="set__delete-btn">Удалить</a>
           </div>
           <div class="set__item">
-            <img src="img/product-lamp.jpg" alt="#" class="set__img" />
+            <img src="img/product-lamp.png" alt="#" class="set__img" />
             <div class="set__description-item">
               <h3 class="set__item-title">
                 Дизайнерский светильник изготавливаемый по проекту
@@ -147,9 +147,9 @@
               </div>
             </div>
             <form action="#" class="set__form" method="GET">
-              <input type="button" id="buttonCountPlus" value="+" />
-              <div id="buttonCountNumber">1</div>
-              <input type="button" id="buttonCountMinus" value="-" />
+              <input type="button" class="buttonCountPlus" value="+" />
+              <div class="buttonCountNumber">1</div>
+              <input type="button" class="buttonCountMinus" value="-" />
               <p class="set__alert">
                 <i class="fa fa-check" aria-hidden="true"></i>В наличии
               </p>
@@ -167,9 +167,90 @@
           </p>
         </div>
         <div class="set__btn">
-          <a href="#" class="set__btn-link btn">Отправить подборку на почту</a>
-          <a href="#" class="set__btn-link btn">Отправить заявку на расчет</a>
+          <a href="#" class="set__btn-link modal-mail-btn btn"
+            >Отправить подборку на почту</a
+          >
+          <a href="#" class="set__btn-link modal-mail-btn btn"
+            >Отправить заявку на расчет</a
+          >
         </div>
+        <div class="modal__mail">
+          <a href="#" class="modal__close">+</a>
+          <h3 class="modal__title">Введите следующие данные</h3>
+          <form action="#" method="GET" class="modal__form">
+            <input
+              type="text"
+              placeholder="Ваше имя*"
+              name="name"
+              id="user"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Ваш e-mail*"
+              name="email"
+              id="email"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Ваш телефон*"
+              name="phone"
+              id="phone"
+              required
+            />
+            <div class="data__checkbox">
+              <div id="modal__data">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <label for="data">
+                Даю согласие на <a href="#">обработку персональных данных</a>
+              </label>
+              <input type="checkbox" name="data" id="data" />
+            </div>
+            <button type="submit" class="modal__btn btn">Отправить</button>
+          </form>
+        </div>
+        <div class="modal__thank">
+          <a href="#" class="modal__close-thank">+</a>
+          <h3 class="modal__title-thank">Спасибо!</h3>
+          <p class="modal__text-thank">
+            Выша заявка принята в ближайшее время наш менеджер с Вами свяжется.
+          </p>
+        </div>
+        <div class="modal__mail">
+          <a href="#" class="modal__close">+</a>
+          <h3 class="modal__title">Введите адресс электронной почты</h3>
+          <form action="#" method="GET" class="modal__form">
+            <input
+              type="email"
+              placeholder="Ваш e-mail*"
+              name="email"
+              id="email"
+              required
+            />
+
+            <div class="data__checkbox">
+              <div id="modal__data">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <label for="data">
+                Даю согласие на <a href="#">обработку персональных данных</a>
+              </label>
+              <input type="checkbox" name="data" id="data" />
+            </div>
+            <button type="submit" class="modal__btn btn">Отправить</button>
+          </form>
+        </div>
+        <div class="modal__thank">
+          <a href="#" class="modal__close-thank">+</a>
+          <h3 class="modal__title-thank">Спасибо!</h3>
+          <p class="modal__subtitle-thank">Проверьте почтовый ящик!</p>
+          <p class="modal__text-thank">
+            На указанную почту была выслана подборка с выбранными товарами
+          </p>
+        </div>
+        <div class="modal__close-wind"></div>
       </div>
     </section>
     <footer class="footer">

@@ -20,7 +20,6 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).next(".catalog__item-content").toggleClass("active");
   });
-
   $(".solutions__item-title").click(function (e) {
     e.preventDefault();
     $(this).next(".solutions__item-content").toggleClass("active");
@@ -104,13 +103,39 @@ $(".services__tabs").css({ height: heigthTabContentServices + 126 });
 // set
 
 let numer = 1;
-$("#buttonCountPlus").click(function () {
+$(".buttonCountPlus").click(function () {
   numer = numer + 1;
-  $("#buttonCountNumber").html(numer);
+  $(".buttonCountNumber").html(numer);
 });
-$("#buttonCountMinus").click(function () {
+$(".buttonCountMinus").click(function () {
   if (numer > 0) {
     numer = numer - 1;
-    $("#buttonCountNumber").html(numer);
+    $(".buttonCountNumber").html(numer);
   }
 });
+
+// modal
+$(".data__checkbox").click(function () {
+  $("#modal__data").toggleClass("active");
+});
+
+$(".modal-mail-btn").click(function (e) {
+  e.preventDefault();
+  $(".modal__mail, .modal__close-wind").addClass("active");
+  $("body").addClass("lock");
+});
+$(".modal__close, .modal__close-wind, .modal__btn").click(function (e) {
+  e.preventDefault();
+  $(".modal__mail, .modal__close-wind").removeClass("active");
+  $("body").removeClass("lock");
+});
+$(".modal__btn").click(function () {
+  $(".modal__thank, .modal__close-wind").addClass("active");
+  $("body").addClass("lock");
+});
+
+if ($(".modal__thank").length > 0) {
+  $(".modal__thank, .modal__close-wind").click(function () {
+    $(".modal__thank, .modal__close-wind").removeClass("active");
+  });
+}
