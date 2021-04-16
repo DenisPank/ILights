@@ -56,34 +56,35 @@ $(document).ready(function () {
   });
 });
 
-const slider = document.querySelector(".download__swiper-container");
+if ($("#download__swiper-container").length > 0) {
+  const slider = document.querySelector(".download__swiper-container");
 
-var swiper;
+  var swiper;
 
-function resizeScrenn() {
-  if ($(window).width() >= 769) {
-    if ($("#download__swiper-container").length > 0) {
-      swiper = new Swiper(".download__swiper-container", {
-        scrollbar: {
-          el: ".download__swiper-scrollbar",
-        },
-        direction: "vertical",
-        slidesPerView: 3,
-      });
-    }
-  } else {
-    if (slider.classList.contains("swiper-container-initialized")) {
-      swiper.destroy();
+  function resizeScrenn() {
+    if ($(window).width() >= 769) {
+      if ($("#download__swiper-container").length > 0) {
+        swiper = new Swiper(".download__swiper-container", {
+          scrollbar: {
+            el: ".download__swiper-scrollbar",
+          },
+          direction: "vertical",
+          slidesPerView: 3,
+        });
+      }
+    } else {
+      if (slider.classList.contains("swiper-container-initialized")) {
+        swiper.destroy();
+      }
     }
   }
-}
 
-resizeScrenn();
-
-$(window).resize(function () {
   resizeScrenn();
-});
 
+  $(window).resize(function () {
+    resizeScrenn();
+  });
+}
 // index
 // about
 

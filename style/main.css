@@ -2346,22 +2346,27 @@ body.active {
   margin-bottom: 20px;
 }
 
-.set__name {
-}
-.set__description {
-  transform: translateX(160px);
-}
-.set__amount {
-  transform: translateX(520px);
-}
-.set__sum {
-  transform: translateX(770px);
-}
+.set__name,
+.set__description,
+.set__amount,
+.set__sum,
 .set__code {
-  transform: translateX(920px);
+  width: 100%;
 }
-.set__card {
+
+.set__code,
+.set__amount,
+.set__sum {
+  text-align: end;
 }
+
+.set__name {
+  max-width: 185px;
+}
+
+.set__price {
+}
+
 .set__item {
   display: flex;
   height: 175px;
@@ -2369,6 +2374,7 @@ body.active {
   transition: all 0.4s ease;
   border-bottom: 1px solid rgba(229, 229, 229, 1);
   margin-bottom: 15px;
+  padding: 0 20px;
 }
 
 .set__item:hover {
@@ -2377,12 +2383,12 @@ body.active {
 }
 .set__img {
   width: 135px;
-  transform: translateX(20px);
+  /* transform: translateX(20px); */
 }
 .set__description-item {
   height: fit-content;
-  transform: translateX(70px);
   width: 340px;
+  margin-left: 30px;
 }
 .set__item-title {
   font-size: 17px;
@@ -2449,7 +2455,7 @@ body.active {
   border: 1px solid #c0c0c0;
   justify-content: space-between;
   border-radius: 2px;
-  transform: translate(165px);
+  margin-left: 120px;
 }
 
 .set__alert {
@@ -2472,7 +2478,7 @@ body.active {
   font-size: 14px;
   font-weight: 700;
   height: fit-content;
-  transform: translateX(415px);
+  margin-left: 225px;
 }
 
 .set__price i {
@@ -2487,8 +2493,8 @@ body.active {
   position: relative;
   padding-left: 20px;
   height: fit-content;
-  transform: translateX(535px);
   transition: all 0.4s ease;
+  margin-left: auto;
 }
 
 .set__delete-btn:hover {
@@ -2564,6 +2570,10 @@ body.active {
   width: fit-content;
 }
 
+.set__total i {
+  margin-left: 5px;
+}
+
 .set__btn-link {
   font-size: 14px;
   font-weight: 500;
@@ -2571,7 +2581,7 @@ body.active {
   min-width: 315px;
   transition: all 0.2s ease;
   text-align: center;
-  padding: 14px 0;
+  padding: 14px 10px;
   background: transparent;
   border: 1px solid #3d4f64;
   border-radius: 2px;
