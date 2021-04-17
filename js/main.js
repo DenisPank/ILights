@@ -90,6 +90,7 @@ if ($("#download__swiper-container").length > 0) {
 
 let heigthTabContent = $(".tab-content").height();
 $(".about__tabs").css({ height: heigthTabContent + 50 });
+$(".tabs").css({ height: heigthTabContent + 88 });
 
 let heigthStabContent = $(".stab-content").height();
 $(".solutions__tabs").css({ height: heigthStabContent });
