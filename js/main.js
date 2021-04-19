@@ -40,6 +40,11 @@ $(document).ready(function () {
     $(this).next(".product-bookmark__item-content").toggleClass("active");
     $(this).toggleClass("active");
   });
+  $(".accordion-title").click(function (e) {
+    e.preventDefault();
+    $(this).next(".accordion-content").toggleClass("active");
+    $(this).toggleClass("active");
+  });
 
   $(".services__link").click(function (e) {
     e.preventDefault();
