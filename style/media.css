@@ -26,7 +26,7 @@
   }
 
   .catalog {
-    padding: 50px 0 50px 0;
+    padding: 10px 0 50px 0;
   }
 
   .catalog__title {
@@ -158,6 +158,14 @@
 @media screen and (max-width: 992px) {
   .solutions__tabs .stab-content {
     width: 50%;
+  }
+
+  .services-info {
+    padding: 10px 0 25px;
+  }
+
+  .details {
+    padding: 10px 0 15px 0;
   }
 
   .catalog__bar-mobil {
@@ -658,7 +666,7 @@
 
   .about__title {
     font-size: 18px;
-    margin: 35px 0 0 0;
+    margin: 0;
   }
 
   .about__tabs {
@@ -922,17 +930,17 @@
   }
 
   .set__item-title {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .set__brief {
-    font-size: 13px;
+    font-size: 15px;
     margin: 10px 0 0 0;
     grid-row-gap: 5px;
   }
 
   .set__brief-text {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .set__form {
@@ -955,7 +963,7 @@
   }
 
   .set__title {
-    margin: 30px 0 20px;
+    margin: 0 0 20px;
   }
 
   .set__total {
@@ -1160,12 +1168,12 @@
   }
 
   .set__item-title {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .set__brief,
   .set__brief-text {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .set__btn {
@@ -1204,6 +1212,19 @@
     width: 375px;
   }
 
+  .catalog__novelty-wrapper {
+    margin: 350px 0 50px auto;
+  }
+
+  .set__item-title {
+    font-size: 12px;
+  }
+
+  .set__brief,
+  .set__brief-text {
+    font-size: 11px;
+  }
+
   .header__content {
     width: 100%;
   }
@@ -1213,15 +1234,35 @@
   }
 
   .header__text {
-    font-size: 20px;
+    font-size: 14px;
+    margin: 15px 0 30px 0;
+  }
+
+  .header__btn {
+    padding: 14px 55px;
+    font-size: 14px;
+  }
+
+  .catalog__title {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .catalog__item-title h3 {
+    font-size: 14px;
+  }
+
+  .catalog__wrapper {
+    margin-top: 20px;
+  }
+
+  .catalog__text {
+    font-size: 14px;
+    padding: 0 40px;
   }
 
   h1 {
-    font-size: 27px;
-  }
-
-  .services__line-text {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .services__block {
@@ -1292,7 +1333,7 @@
   }
 
   .catalog__title {
-    margin: 25px 0 335px 0;
+    margin: 25px 0 0 0;
   }
 
   .details__character-form {
@@ -1419,10 +1460,56 @@
   .nav__burger-link.nav__btn.btn.link {
     padding: 11px 22px;
   }
+
+  .catalog__btn-index {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .services__title {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .services__wrapper {
+    margin-top: 20px;
+  }
+
+  .services__line-text {
+    font-size: 14px;
+  }
+
+  .services__text.services__text-accardion.active {
+    font-size: 12px;
+  }
+
+  .new-products__main-title,
+  .questions__title,
+  .download__title {
+    font-size: 18px;
+  }
+
+  .new-products__btn.btn {
+    font-size: 14px;
+  }
+
+  .questions__btn.btn {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 375px) {
   .container {
     width: 320px;
+  }
+
+  .nav__add-link.link,
+  .nav__burger-link.nav__add.link {
+    font-size: 16px;
+  }
+
+  .nav__burger-link.nav__btn.btn.link {
+    font-size: 14px;
   }
 
   .new-products__block {
@@ -1474,10 +1561,6 @@
     padding: 24px 60px 17px 20px;
   }
 
-  .catalog__title {
-    margin: 25px 0 355px 0;
-  }
-
   .catalog__type-link {
     font-size: 14px;
   }
@@ -1503,8 +1586,13 @@
     width: 300px;
   }
 
+  .services__item-title::after,
+  .services__item-title::before {
+    top: 30px;
+  }
+
   .header__btn {
-    padding: 25px 85px;
+    padding: 15px 85px;
   }
 
   .new-products__offer {
@@ -1575,7 +1663,7 @@
   }
 
   .catalog__title {
-    margin: 25px 0 295px 0;
+    margin: 25px 0 0 0;
   }
 
   .catalog__title,
@@ -1584,11 +1672,11 @@
   }
 
   .catalog__filter-type {
-    top: 75px;
+    top: 35px;
   }
 
   .catalog__filter {
-    top: 125px;
+    top: 105px;
   }
 
   .catalog__novelty .new-products__block .new-products__img-offer {

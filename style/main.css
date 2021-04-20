@@ -1113,7 +1113,7 @@ body.active {
 
 /****************************************************** solutions ***********************888*/
 .solutions {
-  padding: 30px 0 50px 0;
+  padding: 60px 0 50px 0;
 }
 
 .solutions__title {
@@ -1358,7 +1358,7 @@ body.active {
 /* solutions  */
 /****************************************** services  *******************************/
 .services {
-  padding: 20px 0 25px 0;
+  padding: 65px 0 25px 0;
 }
 
 .palce__link,
@@ -1374,7 +1374,7 @@ body.active {
   font-size: 24px;
   padding: 0;
   border: none;
-  margin: 65px 0 40px 0;
+  margin: 0 0 40px 0;
 }
 
 .services__tabs {
@@ -2341,7 +2341,7 @@ body.active {
 /***************************************  set  *******************************/
 
 .set {
-  padding: 20px 0 50px;
+  padding: 55px 0 50px;
 }
 
 .set__title {
@@ -2349,7 +2349,7 @@ body.active {
   font-weight: 700;
   padding: 0;
   border: none;
-  margin: 75px 0 50px;
+  margin: 0 0 50px;
 }
 
 .set__info-product {
@@ -2698,20 +2698,24 @@ body.active {
   display: none;
 }
 
-#modal__data {
+.modal__data {
   display: inline-block;
   border: 1px solid #ffc94f;
   width: 11px;
   height: 11px;
   border-radius: 2px;
   margin-right: 5px;
+  position: relative;
 }
 
-#modal__data i {
+.modal__data i {
   display: none;
   font-size: 9px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#modal__data.active i {
+.modal__data.active i {
   display: block;
 }
 
@@ -2927,7 +2931,7 @@ body.active {
 }
 
 .transfer {
-  padding: 40px 0 50px;
+  padding: 55px 0 50px;
 }
 .transfer__form {
   display: flex;

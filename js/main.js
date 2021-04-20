@@ -127,7 +127,7 @@ jQuery(document).ready(function ($) {
 
   // modal
   $(".data__checkbox").click(function () {
-    $("#modal__data").toggleClass("active");
+    $(".modal__data").toggleClass("active");
   });
 
   $(".modal-mail-btn").click(function (e) {
