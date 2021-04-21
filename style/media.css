@@ -1206,6 +1206,11 @@
   .catalog__novelty-wrapper {
     margin: 325px 0 50px auto;
   }
+
+  .details__character-form {
+    grid-column-gap: 0;
+    grid-template-columns: 140px 1fr;
+  }
 }
 @media screen and (max-width: 425px) {
   .container {
