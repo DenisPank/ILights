@@ -1645,7 +1645,7 @@
 
   .footer__cont-link.link {
     display: flex;
-    column-gap: 10px;
+    column-gap: 0;
     align-items: center;
   }
 
