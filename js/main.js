@@ -56,10 +56,6 @@ jQuery(document).ready(function ($) {
       $(this).toggleClass("active");
     });
 
-    $(".new-products__block").hover(function () {
-      $(this).toggleClass("active");
-    });
-
     $(".nav__burger").click(function () {
       $(".nav__block, .nav__burger, body").toggleClass("active");
     });

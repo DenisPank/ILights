@@ -116,6 +116,11 @@
 
   .new-products__block {
     margin-top: 30px;
+    max-width: 23%;
+  }
+
+  .new-products__block.shop {
+    margin-top: 0;
   }
 
   .catalog__filter {
@@ -133,11 +138,6 @@
   .catalog__products-wrapper,
   .catalog__products {
     width: 100%;
-  }
-
-  .catalog__products {
-    grid-row-gap: 25px;
-    justify-items: center;
   }
 
   .details-mini-swiper-container {
@@ -275,10 +275,6 @@
 
   .catalog__novelty {
     flex-wrap: wrap;
-  }
-
-  .catalog__novelty .new-products__block:last-child {
-    margin-top: 20px;
   }
 
   .catalog__products {
@@ -428,7 +424,7 @@
   }
 
   .new-products__block {
-    width: 240px;
+    max-width: 32%;
   }
 
   .solutions__tabs .stab-content {
@@ -447,10 +443,6 @@
   .nav__burger-link.nav__add.link {
     margin: 0;
     padding: 12px 20px;
-  }
-
-  .catalog__novelty {
-    margin: 0;
   }
 
   .solutions {
@@ -574,24 +566,19 @@
   }
 
   .new-products__block {
-    width: 45%;
-    height: 440px;
+    max-width: 48%;
+  }
+
+  .new-products__content-offer {
+    margin-bottom: 40px;
   }
 
   .nav__block .nav__burger-link {
     padding: 15px 20px;
   }
 
-  .new-products__list {
-    display: none;
-  }
-
   .new-products__offer {
     grid-gap: 13px;
-  }
-
-  .new-products__price {
-    font-size: 21px;
   }
 
   .download__swiper-container .swiper-slide {
@@ -856,8 +843,8 @@
     font-weight: 800;
   }
 
-  .catalog__novelty .new-products__block {
-    width: 45%;
+  .new-products__block.shop {
+    max-width: 48%;
   }
 
   .catalog__novelty .new-products__block .new-products__type,
@@ -876,11 +863,6 @@
 
   .catalog__novelty {
     justify-content: space-between;
-  }
-
-  .catalog__products {
-    justify-content: space-between;
-    margin: 0;
   }
 
   .catalog__products .new-products__block:last-child,
@@ -1116,32 +1098,17 @@
     font-size: 20px;
   }
 
-  .new-products__title {
-    font-size: 15px;
-  }
-
   .new-products__btn-text.btn {
     font-size: 16px;
   }
 
-  .catalog__type-link.link {
+  .catalog__type-link.link,
+  .new-products__info p {
     font-size: 14px;
-  }
-
-  .new-products__btn-offer a {
-    padding: 15px 10px;
-  }
-
-  .new-products__title {
-    margin: 40px 0 15px;
   }
 
   .new-products__img-offer {
     transform: translate(-50%, -145px);
-  }
-
-  .new-products__price {
-    margin: 0;
   }
 
   .catalog__item-title h3 {
@@ -1158,13 +1125,22 @@
     width: 425px;
   }
 
-  .services__line-text,
-  .catalog__item-title h3 {
-    font-size: 16px;
+  .new-products__title,
+  .new-products__info p {
+    font-size: 12px;
   }
 
   .new-products__price {
-    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .new-products__btn-text.btn {
+    font-size: 14px;
+  }
+
+  .services__line-text,
+  .catalog__item-title h3 {
+    font-size: 16px;
   }
 
   .services__title-office {
@@ -1179,27 +1155,11 @@
     margin-top: 30px;
   }
 
-  .new-products__block {
-    width: 200px;
-    padding: 55px 8px 10px 8px;
-    height: 400px;
-  }
-
-  .new-products__img {
-    height: 100%;
-  }
-
   .new-products__img-offer {
     transform: translate(-50%, -110px);
     height: 70px;
   }
 
-  .new-products__title {
-    margin: 20px 0;
-    font-size: 15px;
-  }
-
-  .new-products__price,
   .catalog__title-filter,
   .catalog__title-shop,
   .catalog__title-novelty,
@@ -1207,18 +1167,21 @@
     font-size: 20px;
   }
 
-  .new-products__btn-text.btn,
+  .new-products__content-offer {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .new-products__block {
+    min-height: 540px;
+  }
+
   .catalog__type-link.link,
   .catalog__bar-mobil,
   .catalog__title-wrapper.active
     ~ .catalog__btn-wrapper
     .catalog__btn:nth-child(1) {
     font-size: 16px;
-  }
-
-  .new-products__btn-offer a {
-    padding: 15px 0;
-    font-size: 15px;
   }
 
   .footer__cont-link,
@@ -1231,10 +1194,6 @@
     width: 17px;
     height: 17px;
     margin-right: 0;
-  }
-
-  .new-products__title {
-    margin: 70px 0 0 0;
   }
 
   .footer__catalog-list {
@@ -1341,8 +1300,8 @@
     width: 375px;
   }
 
-  .new-products__price {
-    margin-top: 20px;
+  .new-products__list {
+    display: none;
   }
 
   .catalog__novelty-wrapper {
@@ -1360,10 +1319,6 @@
 
   .header__content {
     width: 100%;
-  }
-
-  .new-products__block {
-    width: 181px;
   }
 
   .header__text {
@@ -1641,6 +1596,12 @@
 
   .new-products__btn-text.btn {
     font-weight: 600;
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+
+  .new-products__btn-add {
+    line-height: 38px;
   }
 
   .footer__cont-link.link {
@@ -1653,14 +1614,35 @@
     width: 20px;
     height: 20px;
   }
+
+  .new-products__block {
+    min-height: 312px;
+    margin: 0;
+  }
+
+  .new-products__img {
+    max-height: 100px;
+  }
+
+  .new-products__title {
+    font-size: 11px;
+  }
+
+  .new-products__price {
+    font-size: 14px;
+  }
+
+  .new-products__type {
+    font-size: 14px;
+  }
+
+  .new-products__block.shop .new-products__type {
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 375px) {
   .container {
     width: 320px;
-  }
-
-  .new-products__btn-text.btn {
-    font-size: 14px;
   }
 
   .solutions__title-mobil {
@@ -1677,17 +1659,8 @@
     font-size: 14px;
   }
 
-  .new-products__block {
-    width: 153px;
-  }
-
   .new-products__img-offer {
     height: 50px;
-  }
-
-  .new-products__title {
-    font-size: 12px;
-    line-height: 1.636em;
   }
 
   .new-products__price {
@@ -1695,11 +1668,7 @@
   }
 
   .new-products__block {
-    height: 370px;
-  }
-  .new-products__btn-offer a {
-    padding: 15px 0;
-    font-size: 12px;
+    max-width: 47%;
   }
 
   .download {
@@ -1747,11 +1716,7 @@
   }
 
   .catalog__novelty-wrapper {
-    margin: 350px 0 50px auto;
-  }
-
-  .catalog__novelty {
-    margin: 0;
+    margin: 350px 0 0 auto;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1786,11 +1751,6 @@
 
   .new-products__price {
     font-size: 14px;
-  }
-
-  .new-products__title {
-    font-size: 12px;
-    margin-top: 60px;
   }
 
   .new-products__btn-offer a {
@@ -1870,10 +1830,6 @@
 
   .catalog__type-link.link {
     font-size: 12px;
-  }
-
-  .new-products__btn-offer a {
-    padding: 10px 0;
   }
 
   .catalog__title-wrapper::after,
