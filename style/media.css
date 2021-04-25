@@ -1891,8 +1891,12 @@
     height: 49px;
   }
 
-  .modal__mail {
+  .modal {
     width: 100%;
     left: calc(50% - 160px);
+  }
+
+  .modal-thank {
+    width: 100%;
   }
 }
