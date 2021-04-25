@@ -136,25 +136,51 @@ jQuery(document).ready(function ($) {
     $(".modal__data").toggleClass("active");
   });
 
-  $(".modal-mail-btn").click(function (e) {
+  $(".set__btn-link.modal-mobil-btn").click(function (e) {
     e.preventDefault();
-    $(".modal__mail, .modal__close-wind").addClass("active");
+    $(".modal.modal-mobil, .modal__close-wind").addClass("active");
     $("body").addClass("lock");
   });
   $(".modal__close, .modal__close-wind, .modal__btn").click(function (e) {
     e.preventDefault();
-    $(".modal__mail, .modal__close-wind").removeClass("active");
+    $(".modal, .modal__close-wind").removeClass("active");
     $("body").removeClass("lock");
   });
   $(".modal__btn").click(function () {
-    $(".modal__thank, .modal__close-wind").addClass("active");
+    $(".modal-thank.modal-thank-mobil, .modal__close-wind").addClass("active");
     $("body").addClass("lock");
   });
 
-  if ($(".modal__thank").length > 0) {
-    $(".modal__thank, .modal__close-wind").click(function () {
-      $(".modal__thank, .modal__close-wind").removeClass("active");
-    });
+  if ($(".modal-thank").length > 0) {
+    $(".modal-thank, .modal__close-wind, .modal__close-thank").click(
+      function () {
+        $(".modal-thank, .modal__close-wind").removeClass("active");
+        $("body").removeClass("lock");
+      }
+    );
+  }
+  $(".set__btn-link.modal-mail-btn").click(function (e) {
+    e.preventDefault();
+    $(".modal.modal-mail, .modal__close-wind").addClass("active");
+    $("body").addClass("lock");
+  });
+  $(".modal__close, .modal__close-wind, .modal__btn").click(function (e) {
+    e.preventDefault();
+    $(".modal, .modal__close-wind").removeClass("active");
+    $("body").removeClass("lock");
+  });
+  $(".modal__btn").click(function () {
+    $(".modal-thank.modal-thank-mail, .modal__close-wind").addClass("active");
+    $("body").addClass("lock");
+  });
+
+  if ($(".modal-thank").length > 0) {
+    $(".modal-thank, .modal__close-wind, .modal__close-thank").click(
+      function () {
+        $(".modal-thank, .modal__close-wind").removeClass("active");
+        $("body").removeClass("lock");
+      }
+    );
   }
 
   // catalog
