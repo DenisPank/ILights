@@ -113,16 +113,22 @@ jQuery(document).ready(function ($) {
   // services
   // set
 
-  let numer = 1;
-  $(".buttonCountPlus").click(function () {
-    numer = numer + 1;
-    $(".buttonCountNumber").html(numer);
-  });
-  $(".buttonCountMinus").click(function () {
-    if (numer > 0) {
-      numer = numer - 1;
-      $(".buttonCountNumber").html(numer);
-    }
+  const btns = document.querySelectorAll(".counter__btn");
+
+  btns.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const direction = this.dataset.direction;
+      const inp = this.parentElement.querySelector(".counter__value");
+      const currentValue = +inp.value;
+      let newValue;
+      if (direction === "plus") {
+        newValue = currentValue + 1;
+      } else {
+        newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+      }
+      inp.value = newValue;
+    });
   });
 
   // modal

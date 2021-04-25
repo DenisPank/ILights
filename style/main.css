@@ -2476,6 +2476,7 @@ body.active {
   color: rgba(83, 83, 83, 1);
   text-align: center;
   width: 25px;
+  padding: 0;
 }
 
 .buttonCountPlus,
@@ -2603,7 +2604,7 @@ body.active {
   font-weight: 700;
   font-size: 14px;
   color: rgba(83, 83, 83, 1);
-  margin-right: 175px;
+  margin-right: 185px;
 }
 
 .set__btn {
