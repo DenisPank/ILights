@@ -23,6 +23,7 @@ jQuery(document).ready(function ($) {
     $(".catalog__item-title").click(function (e) {
       e.preventDefault();
       $(this).next(".catalog__item-content").toggleClass("active");
+      $(this).toggleClass("active");
     });
     $(".solutions__item-title").click(function (e) {
       e.preventDefault();

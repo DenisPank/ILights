@@ -24,16 +24,18 @@
   <body>
     <nav class="nav">
       <div class="container">
-        <img src="img/logo.png" alt="logo" class="nav__logo" />
+        <a href="index.html" class="nav__logo">
+          <img src="img/logo.png" alt="logo" />
+        </a>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="about.html" class="list__link link">О компании </a>
           </li>
           <li class="nav__item">
-            <a href="catalog.html" class="list__link link"> Услуги </a>
+            <a href="services.html" class="list__link link"> Услуги </a>
           </li>
           <li class="nav__item">
-            <a href="services.html" class="list__link link">Проекты </a>
+            <a href="#" class="list__link link">Проекты </a>
           </li>
           <li class="nav__item">
             <a href="transfer.html" class="list__link link"
@@ -41,7 +43,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="services.html" class="nav__add-link link"> Контакты </a>
+            <a href="#" class="list__link link"> Контакты </a>
           </li>
         </ul>
         <a href="set.html" class="nav__add link">
@@ -64,10 +66,10 @@
               <a href="about.html" class="list__link link">О компании </a>
             </li>
             <li class="nav__item">
-              <a href="catalog.html" class="list__link link"> Услуги </a>
+              <a href="services.html" class="list__link link"> Услуги </a>
             </li>
             <li class="nav__item">
-              <a href="services.html" class="list__link link">Проекты </a>
+              <a href="#" class="list__link link">Проекты </a>
             </li>
             <li class="nav__item">
               <a href="transfer.html" class="list__link link"
@@ -75,7 +77,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="services.html" class="nav__add-link link"> Контакты </a>
+              <a href="#" class="list__link link"> Контакты </a>
             </li>
           </ul>
           <a href="set.html" class="nav__burger-link nav__add link">
@@ -94,7 +96,7 @@
         <!-- gamburger -->
       </div>
     </nav>
-    <header class="header">
+    <section class="header">
       <div class="container">
         <div class="header__content">
           <h1 class="header__title">
@@ -132,79 +134,78 @@
           <div class="header__swiper-scrollbar swiper-scrollbar"></div>
         </div>
       </div>
-    </header>
+    </section>
     <section class="catalog">
       <div class="container">
         <h2 class="catalog__title">Каталог</h2>
         <div class="catalog__wrapper">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a class="catalog__item-title" href="#">
-                <h3>Трековые светильники</h3>
-              </a>
+              <a class="catalog__item-title" href="#"> Трековые светильники </a>
               <div class="catalog__item-content">
                 <p class="catalog__text">
                   Органично вписываются в интерьеры в стиле хай-тек, лофт
                 </p>
-                <a href="#" class="catalog__btn-index btn">
+                <a href="catalog.html" class="catalog__btn-index btn">
                   Перейти в каталог
                 </a>
               </div>
             </li>
             <li class="catalog__item">
               <a class="catalog__item-title" href="#">
-                <h3>Встраиваемые светильники</h3>
+                Встраиваемые светильники
               </a>
               <div class="catalog__item-content">
                 <p class="catalog__text">
                   Органично вписываются в интерьеры в стиле хай-тек, лофт
                 </p>
-                <a href="#" class="catalog__btn-index btn">
+                <a href="catalog.html" class="catalog__btn-index btn">
+                  Перейти в каталог
+                </a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-title" href="#"> Фигурные светильники </a>
+              <div class="catalog__item-content">
+                <p class="catalog__text">
+                  Органично вписываются в интерьеры в стиле хай-тек, лофт
+                </p>
+                <a href="catalog.html" class="catalog__btn-index btn">
                   Перейти в каталог
                 </a>
               </div>
             </li>
             <li class="catalog__item">
               <a class="catalog__item-title" href="#">
-                <h3>Фигурные светильники</h3>
+                Светильники Армстронг
               </a>
               <div class="catalog__item-content">
                 <p class="catalog__text">
                   Органично вписываются в интерьеры в стиле хай-тек, лофт
                 </p>
-                <a href="#" class="catalog__btn-index btn">
+                <a href="catalog.html" class="catalog__btn-index btn">
                   Перейти в каталог
                 </a>
               </div>
             </li>
             <li class="catalog__item">
               <a class="catalog__item-title" href="#">
-                <h3>Светильники Армстронг</h3>
+                Светильники Армстронг с равномерной засветкой
               </a>
               <div class="catalog__item-content">
                 <p class="catalog__text">
                   Органично вписываются в интерьеры в стиле хай-тек, лофт
                 </p>
-                <a href="#" class="catalog__btn-index btn">
-                  Перейти в каталог
-                </a>
-              </div>
-            </li>
-            <li class="catalog__item">
-              <a class="catalog__item-title" href="#">
-                <h3>Светильники Армстронг с равномерной засветкой</h3>
-              </a>
-              <div class="catalog__item-content">
-                <p class="catalog__text">
-                  Органично вписываются в интерьеры в стиле хай-тек, лофт
-                </p>
-                <a href="#" class="catalog__btn-index btn">
+                <a href="catalog.html" class="catalog__btn-index btn">
                   Перейти в каталог
                 </a>
               </div>
             </li>
           </ul>
-          <div class="catalog__window">
+          <div
+            class="catalog__window"
+            style="background-image: url(img/window.jpg)"
+          >
             <div class="catalog__window-acro">
               <div class="catalog__window-wrapper">
                 <p class="catalog__window-text">Arco</p>
@@ -253,11 +254,12 @@
       <div class="container">
         <h2 class="services__title">Услуги</h2>
         <div class="services__wrapper">
-          <div class="services__block">
-            <a href="#" class="services__link">
-              <h3 class="services__line-text">
-                Изготовление счетильников для торгового и общественного освещени
-              </h3>
+          <div
+            class="services__block"
+            style="background-image: url(/img/bulb.svg)"
+          >
+            <a href="#" class="services__link services__line-text">
+              Изготовление счетильников для торгового и общественного освещени
             </a>
             <p class="services__text services__text-accardion text-description">
               Мы ценим Ваше время, поэтому, коротко о главном. Наша компания
@@ -273,12 +275,12 @@
               частные заказчики.
             </p>
           </div>
-          <div class="services__block">
-            <a href="#" class="services__link">
-              <h3 class="services__line-text">
-                Поставки дизайнерского света от ведущих европейских
-                производителей
-              </h3>
+          <div
+            class="services__block"
+            style="background-image: url(/img/shipment.svg)"
+          >
+            <a href="#" class="services__link services__line-text">
+              Поставки дизайнерского света от ведущих европейских производителей
             </a>
             <p class="services__text services__text-accardion text-description">
               Мы ценим Ваше время, поэтому, коротко о главном. Наша компания
@@ -294,12 +296,13 @@
               частные заказчики.
             </p>
           </div>
-          <div class="services__block">
-            <a href="#" class="services__link">
-              <h3 class="services__line-text">
-                Проектирование, светотехнические расчеты и разработка концепции
-                освещения
-              </h3>
+          <div
+            class="services__block"
+            style="background-image: url(/img/engineer.svg)"
+          >
+            <a href="#" class="services__link services__line-text">
+              Проектирование, светотехнические расчеты и разработка концепции
+              освещения
             </a>
             <p class="services__text services__text-accardion text-description">
               Мы ценим Ваше время, поэтому, коротко о главном. Наша компания
@@ -315,9 +318,12 @@
               частные заказчики.
             </p>
           </div>
-          <div class="services__block">
-            <a href="#" class="services__link">
-              <h3 class="services__line-text">Модернизация светильников</h3>
+          <div
+            class="services__block"
+            style="background-image: url(/img/light.svg)"
+          >
+            <a href="#" class="services__link services__line-text">
+              Модернизация светильников
             </a>
             <p class="services__text services__text-accardion text-description">
               Мы ценим Ваше время, поэтому, коротко о главном. Наша компания
@@ -333,11 +339,12 @@
               частные заказчики.
             </p>
           </div>
-          <div class="services__block">
-            <a href="#" class="services__link">
-              <h3 class="services__line-text">
-                Ремонт светодиодных светильников
-              </h3>
+          <div
+            class="services__block"
+            style="background-image: url(/img/fix.svg)"
+          >
+            <a href="#" class="services__link services__line-text">
+              Ремонт светодиодных светильников
             </a>
             <p class="services__text services__text-accardion text-description">
               Мы ценим Ваше время, поэтому, коротко о главном. Наша компания
@@ -506,7 +513,10 @@
     </section>
     <section class="download">
       <div class="container">
-        <h3 class="download__title">Файлы для скачивания</h3>
+        <div class="download__title-wrapper">
+          <h3 class="download__title">Файлы для скачивания</h3>
+          <img class="download__title-img" src="img/doc.png" alt="doc" />
+        </div>
         <!-- Slider main container -->
         <div
           class="download__swiper-container swiper-container"
@@ -524,7 +534,7 @@
                 >
                 <a href="#" class="download__link-see">Посмотреть</a>
                 <a href="#" class="download__link"
-                  ><p>скачать</p>
+                  ><p>Скачать</p>
                   <img src="img/download.svg" alt="dowl"
                 /></a>
               </div>
@@ -537,7 +547,7 @@
                 >
                 <a href="#" class="download__link-see">Посмотреть</a>
                 <a href="#" class="download__link"
-                  ><p>скачать</p>
+                  ><p>Скачать</p>
                   <img src="img/download.svg" alt="dowl"
                 /></a>
               </div>
@@ -550,7 +560,72 @@
                 >
                 <a href="#" class="download__link-see">Посмотреть</a>
                 <a href="#" class="download__link"
-                  ><p>скачать</p>
+                  ><p>Скачать</p>
+                  <img src="img/download.svg" alt="dowl"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="download__block">
+                <p class="download__text">IES-файлы и прочая документация</p>
+                <a href="#" class="download__text-mob-link"
+                  >IES-файлы и прочая документация</a
+                >
+                <a href="#" class="download__link-see">Посмотреть</a>
+                <a href="#" class="download__link"
+                  ><p>Скачать</p>
+                  <img src="img/download.svg" alt="dowl"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="download__block">
+                <p class="download__text">IES-файлы и прочая документация</p>
+                <a href="#" class="download__text-mob-link"
+                  >IES-файлы и прочая документация</a
+                >
+                <a href="#" class="download__link-see">Посмотреть</a>
+                <a href="#" class="download__link"
+                  ><p>Скачать</p>
+                  <img src="img/download.svg" alt="dowl"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="download__block">
+                <p class="download__text">IES-файлы и прочая документация</p>
+                <a href="#" class="download__text-mob-link"
+                  >IES-файлы и прочая документация</a
+                >
+                <a href="#" class="download__link-see">Посмотреть</a>
+                <a href="#" class="download__link"
+                  ><p>Скачать</p>
+                  <img src="img/download.svg" alt="dowl"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="download__block">
+                <p class="download__text">IES-файлы и прочая документация</p>
+                <a href="#" class="download__text-mob-link"
+                  >IES-файлы и прочая документация</a
+                >
+                <a href="#" class="download__link-see">Посмотреть</a>
+                <a href="#" class="download__link"
+                  ><p>Скачать</p>
+                  <img src="img/download.svg" alt="dowl"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="download__block">
+                <p class="download__text">IES-файлы и прочая документация</p>
+                <a href="#" class="download__text-mob-link"
+                  >IES-файлы и прочая документация</a
+                >
+                <a href="#" class="download__link-see">Посмотреть</a>
+                <a href="#" class="download__link"
+                  ><p>Скачать</p>
                   <img src="img/download.svg" alt="dowl"
                 /></a>
               </div>
@@ -563,7 +638,16 @@
     </section>
     <section class="questions">
       <div class="container">
-        <h3 class="questions__title">Остались вопросы и нужна консультация?</h3>
+        <div class="questions__title-wrapper">
+          <h3 class="questions__title">
+            Остались вопросы и нужна консультация?
+          </h3>
+          <img
+            class="questions__title-img"
+            src="img/mark.png"
+            alt="questions"
+          />
+        </div>
         <form action="#" class="questions__form">
           <input
             type="text"
@@ -597,7 +681,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__block footer__block-logo">
-          <img src="img/logo-footer.png" alt="" class="footer__logo" />
+          <a href="index.html" class="footer__logo">
+            <img src="img/logo-footer.png" alt="logo" />
+          </a>
           <p class="footer__text-logo">© Technolight 2015-2021</p>
         </div>
         <div class="footer__block footer__block-catalog">

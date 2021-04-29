@@ -1,6 +1,10 @@
 @media screen and (max-width: 1366px) {
   .header__content {
-    width: 300px;
+    width: 410px;
+  }
+
+  .header__swiper-container {
+    width: 870px;
   }
 
   .new-products__offer {
@@ -50,6 +54,14 @@
 @media screen and (max-width: 1200px) {
   .solutions__tabs .stab-content {
     width: 68%;
+  }
+
+  .download__block {
+    max-width: 730px;
+  }
+
+  .nav__item {
+    margin-left: 0;
   }
 
   .services__text.services__text-accardion {
@@ -104,8 +116,6 @@
   }
 
   .new-products__offer {
-    flex-wrap: wrap;
-    display: flex;
     justify-content: space-between;
     margin-top: 20px;
   }
@@ -116,7 +126,6 @@
 
   .new-products__block {
     margin-top: 30px;
-    max-width: 23%;
   }
 
   .new-products__block.shop {
@@ -157,7 +166,7 @@
   }
 
   .product-description__tabs label {
-    padding: 14px 15px;
+    padding: 14px 13px;
   }
 
   .details__btn-form {
@@ -184,6 +193,26 @@
 @media screen and (max-width: 992px) {
   .solutions__tabs .stab-content {
     width: 50%;
+  }
+
+  .questions__title-img {
+    left: 0;
+  }
+
+  .header__content {
+    width: 365px;
+  }
+
+  .download__title-img {
+    left: 50px;
+  }
+
+  .download__block {
+    max-width: 550px;
+  }
+
+  .new-products__offer {
+    grid-template-columns: 1fr 1fr;
   }
 
   .services-info {
@@ -274,11 +303,6 @@
   }
 
   .catalog__novelty {
-    flex-wrap: wrap;
-  }
-
-  .catalog__products {
-    display: flex;
     flex-wrap: wrap;
   }
 
@@ -419,10 +443,6 @@
     padding: 10px 0 10px 0;
   }
 
-  .new-products__block {
-    max-width: 32%;
-  }
-
   .solutions__tabs .stab-content {
     width: 59%;
   }
@@ -434,6 +454,19 @@
 @media screen and (max-width: 768px) {
   .container {
     width: 576px;
+  }
+
+  .download__swiper-container {
+    height: auto;
+  }
+
+  .questions__title-img,
+  .download__title-img {
+    display: none;
+  }
+
+  .catalog__products {
+    grid-template-columns: 1fr 1fr;
   }
 
   .nav__burger-link.nav__add.link {
@@ -559,10 +592,6 @@
 
   .services__wrapper {
     margin-top: 30px;
-  }
-
-  .new-products__block {
-    max-width: 48%;
   }
 
   .new-products__content-offer {
@@ -836,10 +865,6 @@
     font-weight: 800;
   }
 
-  .new-products__block.shop {
-    max-width: 48%;
-  }
-
   .catalog__novelty .new-products__block .new-products__type,
   .catalog__products-wrapper .new-products__block .new-products__type {
     top: 10px;
@@ -856,6 +881,7 @@
 
   .catalog__novelty {
     justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 
   .catalog__products .new-products__block:last-child,
@@ -928,11 +954,6 @@
     padding: 12px 275px 12px 20px;
   }
 
-  .services__item-title::after,
-  .services__item-title::before {
-    top: 13px;
-  }
-
   .product-bookmark__wrapper,
   .details-mini-mobil-swiper-container {
     display: block;
@@ -984,6 +1005,7 @@
     transform: none;
     left: 10px;
     position: absolute;
+    margin-left: 0;
   }
 
   .set__item-title {
@@ -1118,6 +1140,10 @@
     width: 425px;
   }
 
+  .questions {
+    padding-top: 65px;
+  }
+
   .new-products__title,
   .new-products__info p {
     font-size: 12px;
@@ -1162,6 +1188,7 @@
 
   .new-products__content-offer {
     margin-bottom: 20px;
+    margin-top: 10px;
     padding: 0 10px;
   }
 
@@ -1276,16 +1303,6 @@
   .catalog.shop {
     padding: 10px 0 30px;
   }
-
-  .catalog__products {
-    grid-gap: 0;
-    justify-content: space-between;
-  }
-
-  .catalog__novelty .new-products__block,
-  .new-products__block {
-    width: 48%;
-  }
 }
 @media screen and (max-width: 425px) {
   .container {
@@ -1338,7 +1355,7 @@
 
   .catalog__text {
     font-size: 14px;
-    padding: 0 40px;
+    padding: 0 10px;
   }
 
   h1 {
@@ -1668,10 +1685,6 @@
     font-size: 14px;
   }
 
-  .new-products__block {
-    max-width: 47%;
-  }
-
   .download {
     padding: 40px 0 0px 0;
   }
@@ -1742,10 +1755,6 @@
     grid-template-columns: 1fr;
   }
 
-  .new-products__block {
-    width: 48%;
-  }
-
   .new-products__img-offer {
     height: fit-content;
   }
@@ -1772,9 +1781,10 @@
     align-items: center;
   }
 
-  .catalog__novelty .new-products__block {
-    width: 48%;
-    height: 340px;
+  .catalog__novelty .new-products__block,
+  .new-products__block.shop {
+    max-width: 100%;
+    width: 100%;
   }
 
   .catalog__products {
@@ -1836,10 +1846,6 @@
   .catalog__title-wrapper::after,
   .catalog__title-wrapper::before {
     top: 8px;
-  }
-
-  .new-products__block {
-    width: 47%;
   }
 
   .new-products__block .new-products__img-offer {
